@@ -2,12 +2,12 @@
 
 Practical developer utilities, scientific research tools, and automation tools. Tools across software engineering, scientific research, data pipelines, build systems, observability, integrity checks, and automation.
 
-This portfolio emphasizes useful, inspectable tools: concrete use cases, documented inputs and outputs, reproducible examples, and runnable tests.
+Start with a small problem worth solving: inspect a dataset, check a dependency graph, or turn measurements into a useful plot. Each tool gives you a concrete use case, clear inputs and outputs, a reproducible example, and runnable tests. Open a directory and take one for a spin.
 
 ## Explore
 
 - [Browse the tool index](INDEX.md)
-- [Read the accompanying research notes](https://github.com/opsix-net/logic-notes)
+- [Read the accompanying research notes](https://github.com/opsix-net/opsix-research)
 
 Each dated tool directory contains:
 

@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-02",
+  "policy_id": "traditional-punctuation-engaging-technical-v1",
+  "research_title": "Opsix Research",
+  "repository": "opsix-net/developer-utilities",
+  "previous_repository": "opsix-net/developer-utilities",
+  "changes": [
+    "Traditional punctuation; no em dashes.",
+    "More inviting introductions, transitions, and practical reading guidance.",
+    "Updated research collection name and portfolio links."
+  ],
+  "validation": {
+    "em_dash_check": "passed",
+    "technical_examples_preserved": true,
+    "article_words": 1848,
+    "existing_tools_and_tests_unchanged": true
+  },
+  "documents": [
+    {
+      "path": "README.md",
+      "before_sha256": "6aa7302d271735b1c3e206b1b77f88b2ee62cd1128c7569ac224a1a96156e9a4",
+      "after_sha256": "c2c52021493a1693dec4c17d7ebf23d9eaeb0b2683290fb0d9fbbc8d1c4dbd2b"
+    },
+    {
+      "path": "tools/2026-10-02/csv-profile/README.md",
+      "before_sha256": "3db0fc0ff756a9e1f83bdd8c5187b4f8102057a44537603dcd8481d811bac437",
+      "after_sha256": "659deeabedae0aba904c97dd8897fe601ff2c0e31c5bb0c6f402dac8585e7fbb"
+    }
+  ]
+}
