@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-02",
+  "account": "opsix-net",
+  "focus": "Practical software engineering, scientific research tools, and automation across sectors",
+  "title": "Trading Applications as Systems: Data, Protocols, and Safe Boundaries",
+  "article": "articles/2026-10-02-trading-applications-data-protocols-safe-boundaries.md",
+  "utility_kind": "csv-profile",
+  "utility_title": "CSV Profile: A Quick Data-Quality Inventory",
+  "utility_use_case": "Before a research or analytics job loads instrument measurements, run the profiler to catch blank cells, inconsistent row widths, and columns with no usable finite numeric values. Use the JSON report as a quick triage artifact in a review or lightweight automation step, then apply domain-specific checks for units, timestamps, acceptable ranges, and scientific or operational meaning.",
+  "domain": "analytics and data quality",
+  "tags": [
+    "software-engineering",
+    "trading-systems",
+    "fix-protocol",
+    "data-quality",
+    "csv",
+    "automation",
+    "research-tools"
+  ],
+  "source": {
+    "book_label": "Getting Started with Forex Trading Using Python",
+    "section_title": "4 Trading Application: What’s Inside?",
+    "book_sha256": "c378eca69b9b9f8cc17658a65bc7a442cc2a732ce92d80a13363b4a4f77b5797",
+    "excerpt_sha256": "ec2fa0dd6faf4019325a725131fbf8340bfd9be97fe19f1d355d122d08284a7b",
+    "excerpt_truncated": true
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_0196336d5cb17af7016ac00e96b24c87d09ed1de7a261454f4",
+    "usage": {
+      "input_tokens": 5323,
+      "input_tokens_details": {
+        "cache_write_tokens": 5320,
+        "cached_tokens": 0
+      },
+      "output_tokens": 4559,
+      "output_tokens_details": {
+        "reasoning_tokens": 608
+      },
+      "total_tokens": 9882
+    },
+    "generated_at": "2026-10-02T20:06:18.687605+00:00",
+    "estimated_standard_usd": 0.0028118,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_0dd3c089544ef612016ac0116948e887d09b5d7c0e1e1ce90f",
+      "usage": {
+        "input_tokens": 9192,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 9189
+        },
+        "output_tokens": 2594,
+        "output_tokens_details": {
+          "reasoning_tokens": 2182
+        },
+        "total_tokens": 11786
+      },
+      "reviewed_at": "2026-10-02T20:20:24.099251+00:00",
+      "summary": "Corrected the FIX checksum and its three-digit rendering, documented CSV logical record numbering rather than physical lines, and noted that numeric accumulation can overflow.",
+      "edits": [
+        {
+          "field": "article_markdown",
+          "old": "8=FIX.4.4␁9=30␁35=D␁55=EUR/USD␁54=1␁38=12000␁10=220␁",
+          "new": "8=FIX.4.4␁9=30␁35=D␁55=EUR/USD␁54=1␁38=12000␁10=008␁"
+        },
+        {
+          "field": "article_markdown",
+          "old": "For this exact prefix, the sum is 2268, so $2268 \\\\bmod 256 = 220$. The trailer value is consequently `10=220`, followed by the final SOH.",
+          "new": "For this exact prefix, the sum is 2312, so $2312 \\\\bmod 256 = 8$. The trailer value is consequently `10=008`, with the checksum rendered as three decimal digits, followed by the final SOH."
+        },
+        {
+          "field": "utility_readme",
+          "old": "`ragged_rows` lists one-based file line numbers whose field count differs from the header; those records are skipped when column summaries are calculated.",
+          "new": "`ragged_rows` lists one-based CSV record numbers (with the header as record 1) whose field count differs from the header; those records are skipped when column summaries are calculated."
+        },
+        {
+          "field": "utility_readme",
+          "old": "ragged-row line numbers",
+          "new": "ragged-row record numbers"
+        },
+        {
+          "field": "utility_readme",
+          "old": "Large numeric sums can lose floating-point precision.",
+          "new": "Large numeric sums can lose floating-point precision or overflow, in which case JSON output fails."
+        }
+      ],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [
+        {
+          "displayed_message": "8=FIX.4.4␁9=30␁35=D␁55=EUR/USD␁54=1␁38=12000␁10=008␁",
+          "body_bytes": 30,
+          "prefix_byte_sum": 2312,
+          "expected_checksum": "008",
+          "declared_body_length": 30,
+          "declared_checksum": "008",
+          "passed": true
+        }
+      ],
+      "estimated_standard_usd": 0.0022161999999999998
+    }
+  },
+  "validation": {
+    "article_words": 1780,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed",
+    "independent_technical_review": "passed"
+  }
+}

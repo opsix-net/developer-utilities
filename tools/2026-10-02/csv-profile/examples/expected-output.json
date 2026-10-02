@@ -1,0 +1,21 @@
+{
+  "columns": {
+    "name": {
+      "missing": 0,
+      "numeric_count": 0,
+      "numeric_max": null,
+      "numeric_mean": null,
+      "numeric_min": null
+    },
+    "value": {
+      "missing": 1,
+      "numeric_count": 2,
+      "numeric_max": 4.0,
+      "numeric_mean": 3.0,
+      "numeric_min": 2.0
+    }
+  },
+  "ok": true,
+  "ragged_rows": [],
+  "rows": 3
+}
