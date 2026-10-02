@@ -105,13 +105,20 @@
     }
   },
   "validation": {
-    "article_words": 1780,
+    "article_words": 1848,
     "glossary_terms": 10,
     "source_copy_check": "passed",
     "credential_check": "passed",
     "bash_syntax": "passed",
     "utility_example": "passed",
     "utility_tests": "passed",
-    "independent_technical_review": "passed"
+    "independent_technical_review": "passed",
+    "editorial_punctuation_check": "passed"
+  },
+  "editorial_revision": {
+    "date": "2026-10-02",
+    "policy_id": "traditional-punctuation-engaging-technical-v1",
+    "revision_record": "revisions/2026-10-02-editorial.json",
+    "scope": "Requested prose and punctuation updates; original generation provenance retained."
   }
 }

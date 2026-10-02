@@ -1,6 +1,6 @@
 ## Overview
 
-`csv-profile.sh` profiles a CSV file’s row shape, blank cells, and finite numeric values. It emits JSON so a developer or researcher can inspect a dataset quickly or pass the result to another script. The utility reports descriptive summaries only; it does not assess statistical significance, infer causes, or determine whether data are scientifically valid.
+A CSV lands in your pipeline. Are its rows the same shape? Are cells blank? What do the finite numeric values look like? Give `csv-profile.sh` a file and get a compact JSON report you can read yourself or pass to another script. It profiles row shape, blank cells, and finite numeric values. These are descriptive summaries only; the tool does not assess statistical significance, infer causes, or determine whether data are scientifically valid.
 
 The book topic motivates a real workflow: before a trading or research application consumes external observations, inspect basic structural and numeric quality. This utility supports that preliminary inspection. It is not part of the book’s implementation and does not validate financial meaning, market freshness, or trading rules.
 
@@ -22,7 +22,7 @@ bash csv-profile.sh --file measurements.csv
 
 The only declared command-line option is required: `--file PATH`. CSV quoting and delimiters follow Python’s standard CSV reader defaults, including comma as the delimiter. Each data record is expected to have the same number of fields as the header.
 
-## Reading the output
+## Make sense of the report
 
 The JSON object contains `ok`, `rows`, `ragged_rows`, and `columns`. `rows` counts data records, not the header. `ragged_rows` lists one-based CSV record numbers (with the header as record 1) whose field count differs from the header; those records are skipped when column summaries are calculated. `ok` is false when any such row is found, and the process exits with status 1 in that case.
 
@@ -32,7 +32,7 @@ Each column reports `missing`, `numeric_count`, `numeric_min`, `numeric_max`, an
 
 The script reads records sequentially, checks each row’s field count, and updates per-column counters and numeric aggregates. Runtime is $O(nm)$ for $n$ data rows and $m$ columns, with working state proportional to the number of columns, apart from the list of ragged-row record numbers. Numeric means are computed as sum divided by numeric count using floating-point arithmetic.
 
-This is a lightweight profile, not a complete CSV validator. It does not report unique values, distributions, quantiles, dates, units, correlations, or reasons for missingness. It does not trim or rewrite the source file, infer schemas, or decide whether a number is plausible. Ragged rows are reported but not profiled. Large numeric sums can lose floating-point precision or overflow, in which case JSON output fails. Treat the output as an initial quality signal and apply domain-specific validation before relying on the data.
+This is a lightweight profile, not a complete CSV validator. It does not report unique values, distributions, quantiles, dates, units, correlations, or reasons for missingness. It does not trim or rewrite the source file, infer schemas, or decide whether a number is plausible. Ragged rows are reported but not profiled. Large numeric sums can lose floating-point precision or overflow, in which case JSON output fails. Use the report to choose your next check, then apply domain-specific validation before relying on the data.
 
 ## Reproducible setup and checks
 
