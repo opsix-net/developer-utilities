@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-05",
+  "account": "opsix-net",
+  "focus": "Practical software engineering, scientific research tools, and automation across sectors",
+  "title": "From Flexible JSON to Reliable Workflows: Make Data Dependencies Explicit",
+  "article": "articles/2026-10-05-flexible-json-reliable-data-workflows.md",
+  "utility_kind": "dependency-order",
+  "utility_title": "Dependency Order",
+  "utility_use_case": "A research team receives semi-structured JSON from several instruments and needs to validate records, normalize fields, run identifier and quality checks, and publish a cleaned dataset. Encode those steps and prerequisites in `dependencies.json`, then run `bash dependency-order.sh --file dependencies.json` during review or as a lightweight preflight check. The output exposes a valid deterministic sequence or flags a graph that cannot be fully ordered. Researchers still need to inspect the data and verify that the declared prerequisites reflect the actual scientific workflow.",
+  "domain": "build systems and workflow orchestration",
+  "tags": [
+    "data-engineering",
+    "json",
+    "workflow",
+    "build-systems",
+    "python",
+    "research-tools"
+  ],
+  "source": {
+    "book_label": "Python Data Cleaning Cookbook",
+    "section_title": "2 Anticipating Data Cleaning Issues When Working with HTML, JSON, and Spark Data",
+    "book_sha256": "c209dfc5be1bbcff29baffcc1087283aa112c7a966cdea1d176a35629e040301",
+    "excerpt_sha256": "524c01b1528bbbdf7274694da41851d7f2906a79db255a1714cc0d24a03360e9",
+    "excerpt_truncated": false
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_01e35868dc6fbab9016ac3c9b19cd087d0a7f6a58479521e72",
+    "usage": {
+      "input_tokens": 2177,
+      "input_tokens_details": {
+        "cache_write_tokens": 2174,
+        "cached_tokens": 0
+      },
+      "output_tokens": 3495,
+      "output_tokens_details": {
+        "reasoning_tokens": 200
+      },
+      "total_tokens": 5672
+    },
+    "generated_at": "2026-10-05T16:01:28.512499+00:00",
+    "estimated_standard_usd": 0.0019652,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_0cda5c1a74dbb684016ac3c9d8bd8887d083ce5b6ba40999a0",
+      "usage": {
+        "input_tokens": 5414,
+        "input_tokens_details": {
+          "cache_write_tokens": 5411,
+          "cached_tokens": 0
+        },
+        "output_tokens": 990,
+        "output_tokens_details": {
+          "reasoning_tokens": 927
+        },
+        "total_tokens": 6404
+      },
+      "reviewed_at": "2026-10-05T16:01:42.544233+00:00",
+      "summary": "No technical corrections needed. The worked graph has five nodes and five edges, and the documented ordering, cycle behavior, complexity, and CLI capabilities match the utility source.",
+      "edits": [],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0010364
+    }
+  },
+  "validation": {
+    "article_words": 1393,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
