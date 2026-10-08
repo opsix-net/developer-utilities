@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-08",
+  "account": "opsix-net",
+  "focus": "Practical software engineering, scientific research tools, and automation across sectors",
+  "title": "From Machine Signals to Better Manufacturing Decisions",
+  "article": "articles/2026-10-08-machine-signals-manufacturing-decisions.md",
+  "utility_kind": "jsonl-audit",
+  "utility_title": "JSONL Audit for Data Pipelines",
+  "utility_use_case": "Use the audit as a preflight check when a data pipeline or API integration receives JSON Lines exports from multiple producers. It can catch malformed lines, non-object JSON values, and fields whose types vary across valid records, while keeping record values out of the report. For research datasets or manufacturing event feeds, this helps identify structural surprises before loading records into a database or analysis workflow. It does not establish that records are complete, scientifically valid, safe to act on, or compliant with a domain schema.",
+  "domain": "data pipelines and API interoperability",
+  "tags": [
+    "manufacturing",
+    "iot",
+    "industrial-data",
+    "automation",
+    "jsonl",
+    "data-quality"
+  ],
+  "source": {
+    "book_label": "Architectural Patterns and Techniques for Developing IoT -- Jasbir Singh Dhaliwal",
+    "section_title": "7 Pattern Implementation in the Manufacturing Domain",
+    "book_sha256": "0f4a1508a53c14ae2e91ed20714d2966838257c1aee6fd96caeb162290c151f1",
+    "excerpt_sha256": "dee3cf70671fd7a118774dce42cb6e1752b37a9cd119da2995293b613257bc79",
+    "excerpt_truncated": true
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_0ba2992ab70ae349016ac7be17dbcc87d0b8ce0bce60904c58",
+    "usage": {
+      "input_tokens": 4434,
+      "input_tokens_details": {
+        "cache_write_tokens": 4431,
+        "cached_tokens": 0
+      },
+      "output_tokens": 4265,
+      "output_tokens_details": {
+        "reasoning_tokens": 536
+      },
+      "total_tokens": 8699
+    },
+    "generated_at": "2026-10-08T16:01:08.576618+00:00",
+    "estimated_standard_usd": 0.0025759,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_06c24a1251a334c6016ac7be450f5c87d0a44a4a7dd7fb09cd",
+      "usage": {
+        "input_tokens": 7970,
+        "input_tokens_details": {
+          "cache_write_tokens": 7967,
+          "cached_tokens": 0
+        },
+        "output_tokens": 2113,
+        "output_tokens_details": {
+          "reasoning_tokens": 1969
+        },
+        "total_tokens": 10083
+      },
+      "reviewed_at": "2026-10-08T16:01:35.318631+00:00",
+      "summary": "Clarified how nonstandard nonfinite values accepted by Python's JSON decoder can cause report serialization to fail.",
+      "edits": [
+        {
+          "field": "utility_readme",
+          "old": "It also does not provide statistical inference, missing-data imputation, or nonfinite-value analysis.",
+          "new": "It does not provide statistical inference or missing-data imputation. Python's decoder accepts `NaN`, `Infinity`, and `-Infinity` even though they are not standard JSON. If one appears inside an object, parsing succeeds but report serialization fails, and argparse reports an error instead of producing the audit report."
+        }
+      ],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0018535
+    }
+  },
+  "validation": {
+    "article_words": 1624,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
