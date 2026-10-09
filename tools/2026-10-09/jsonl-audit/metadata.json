@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-09",
+  "account": "opsix-net",
+  "focus": "Practical software engineering, scientific research tools, and automation across sectors",
+  "title": "From Raw Records to a Useful Visual Story",
+  "article": "articles/2026-10-09-raw-records-useful-visual-story.md",
+  "utility_kind": "jsonl-audit",
+  "utility_title": "JSONL Audit",
+  "utility_use_case": "A research group receives nightly JSONL exports from several laboratory instruments through an API. Before combining files or building plots, a pipeline engineer can run this audit to catch malformed lines, records that are not objects, fields whose observed JSON types vary, and fields absent from some valid records. The summary avoids printing measurement values, which is helpful when reviewing logs in shared build output. A clean audit is not proof that units, ranges, or scientific meaning are correct; it is a quick structural check that helps teams decide what validation should follow. This workflow connects to the article's emphasis on data strategy and structure: trustworthy visual analysis begins with knowing what arrived and how consistently it is represented. The article's visualization framework motivates the workflow, but does not specify this utility.",
+  "domain": "data pipelines and API interoperability",
+  "tags": [
+    "data-visualization",
+    "python",
+    "data-quality",
+    "jsonl",
+    "pipelines",
+    "research-tools"
+  ],
+  "source": {
+    "book_label": "Python Data Visualization Essentials Guide- Become a Data",
+    "section_title": "CHAPTER 1 Introduction to Data Visualization",
+    "book_sha256": "30c7da527072ebd9a3fbd4da98284ac4c979fb4551117bad22ab17f0a2ce02c3",
+    "excerpt_sha256": "12270079c31e9cd7368ae996cd87fd2468de7a200895ecf5231b5a9c32ed75c2",
+    "excerpt_truncated": true
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_0c80c2a7a93cd826016ac90fa07f5887d08213fd69864438a0",
+    "usage": {
+      "input_tokens": 4653,
+      "input_tokens_details": {
+        "cache_write_tokens": 4650,
+        "cached_tokens": 0
+      },
+      "output_tokens": 3870,
+      "output_tokens_details": {
+        "reasoning_tokens": 111
+      },
+      "total_tokens": 8523
+    },
+    "generated_at": "2026-10-09T16:01:12.168763+00:00",
+    "estimated_standard_usd": 0.0024003,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_0ac99e388f37f158016ac90fc85f9c87d097a0d911eb3c634d",
+      "usage": {
+        "input_tokens": 8219,
+        "input_tokens_details": {
+          "cache_write_tokens": 8216,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1407,
+        "output_tokens_details": {
+          "reasoning_tokens": 1271
+        },
+        "total_tokens": 9626
+      },
+      "reviewed_at": "2026-10-09T16:01:30.387441+00:00",
+      "summary": "Corrected the clean-file exit-status claim to account for output serialization failures from non-finite numbers accepted by Python's JSON decoder. The worked arithmetic and other checked documentation claims are accurate.",
+      "edits": [
+        {
+          "field": "utility_readme",
+          "old": "A file with invalid lines produces `ok: false` and a nonzero exit status; a clean file exits successfully.",
+          "new": "A file with invalid lines produces `ok: false` and a nonzero exit status; a file with no invalid lines exits successfully if its report can be serialized."
+        }
+      ],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0015254
+    }
+  },
+  "validation": {
+    "article_words": 1557,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
