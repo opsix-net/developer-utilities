@@ -6,3 +6,4 @@
 | 2026-10-05 | [Dependency Order](tools/2026-10-05/dependency-order/README.md) | build systems and workflow orchestration | <!-- publication:2026-10-05 -->
 | 2026-10-08 | [JSONL Audit for Data Pipelines](tools/2026-10-08/jsonl-audit/README.md) | data pipelines and API interoperability | <!-- publication:2026-10-08 -->
 | 2026-10-09 | [JSONL Audit](tools/2026-10-09/jsonl-audit/README.md) | data pipelines and API interoperability | <!-- publication:2026-10-09 -->
+| 2026-10-13 | [file-manifest](tools/2026-10-13/file-manifest/README.md) | build artifacts and supply-chain integrity | <!-- publication:2026-10-13 -->
