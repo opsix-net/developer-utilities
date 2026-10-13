@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-13",
+  "account": "opsix-net",
+  "focus": "Practical software engineering, scientific research tools, and automation across sectors",
+  "title": "Clusters Are Evidence, Not Answers",
+  "article": "articles/2026-10-13-clusters-are-evidence-not-answers.md",
+  "utility_kind": "file-manifest",
+  "utility_title": "file-manifest",
+  "utility_use_case": "For a reproducible research handoff, run the manifest on a pipeline's `artifacts` directory after generating model outputs, figures, and derived tables. Save the JSON with the run record, then compare inventories before sharing or archiving. This supports traceability of delivered files without altering them. The clustering discussion motivates careful scrutiny of analytical choices, while this utility addresses a separate engineering task: recording artifact identity. It does not perform clustering, certify scientific validity, or claim to implement a recommendation from the book.",
+  "domain": "build artifacts and supply-chain integrity",
+  "tags": [
+    "clustering",
+    "statistics",
+    "research",
+    "reproducibility",
+    "bash",
+    "python",
+    "supply-chain"
+  ],
+  "source": {
+    "book_label": "An Introduction to Statistical Learning  with Applications in R",
+    "section_title": "401 A Tempered Approach to Interpreting the Results of Clustering",
+    "book_sha256": "549689d1fa63f568000fef9267fa6a9133851ddf17ad0d9537bfaf47ae9d0159",
+    "excerpt_sha256": "5e5f00e86ec0c6b7a8cd35edd42967fd1c09f7aad90c19db27ba78ef3a23a7c6",
+    "excerpt_truncated": true
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_05d1f2d1665a514d016ace8668438487d0ba441dc7e0755a0e",
+    "usage": {
+      "input_tokens": 7623,
+      "input_tokens_details": {
+        "cache_write_tokens": 7620,
+        "cached_tokens": 0
+      },
+      "output_tokens": 3911,
+      "output_tokens_details": {
+        "reasoning_tokens": 113
+      },
+      "total_tokens": 11534
+    },
+    "generated_at": "2026-10-13T19:29:27.453104+00:00",
+    "estimated_standard_usd": 0.0027178000000000003,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_0efa320b2bab2718016ace8697fa6c87d0b1cbcc9c036108fd",
+      "usage": {
+        "input_tokens": 11353,
+        "input_tokens_details": {
+          "cache_write_tokens": 11350,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1503,
+        "output_tokens_details": {
+          "reasoning_tokens": 997
+        },
+        "total_tokens": 12856
+      },
+      "reviewed_at": "2026-10-13T19:29:46.367282+00:00",
+      "summary": "Corrected the worked example's within-cluster sums of squares and the resulting preferred partitions before and after rescaling feature B.",
+      "edits": [
+        {
+          "field": "article_markdown",
+          "old": "For the partition by $A$, each point is one unit from its cluster mean in the $A$ direction, so each squared distance is $1$. Across four observations, the within-cluster sum of squares is $4$. For the partition by $B$, each point is $0.5$ units from its cluster mean in the $B$ direction. Each squared distance is $0.25$, giving a total of $4\\times0.25=1$. With the raw values, the partition by $B$ has the lower objective.",
+          "new": "For the partition by $A$, each point is $0.5$ units from its cluster mean in the $B$ direction. Each squared distance is $0.25$, giving a total of $4\\times0.25=1$. For the partition by $B$, each point is one unit from its cluster mean in the $A$ direction, so each squared distance is $1$. Across four observations, the within-cluster sum of squares is $4$. With the raw values, the partition by $A$ has the lower objective."
+        },
+        {
+          "field": "article_markdown",
+          "old": "Now multiply every $B$ value by 3. The vertical separation becomes 3. In the partition by $A$, the vertical deviations from each cluster mean are $1.5$, so their squared contributions total $4\\times2.25=9$. The horizontal deviations still contribute $4$, for a total of $13$. In the partition by $B$, the deviations are $1.5$ per point, again totaling $9$. The preferred partition switches to grouping by $A$.",
+          "new": "Now multiply every $B$ value by 3. The vertical separation becomes 3. In the partition by $A$, the vertical deviations from each cluster mean are $1.5$, so their squared contributions total $4\\times2.25=9$. In the partition by $B$, the vertical deviations are zero because each cluster has a single $B$ value. The horizontal deviations are one per point, giving a total of $4$. The preferred partition switches to grouping by $B$."
+        }
+      ],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0018868
+    }
+  },
+  "validation": {
+    "article_words": 1747,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
