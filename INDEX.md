@@ -7,3 +7,4 @@
 | 2026-10-08 | [JSONL Audit for Data Pipelines](tools/2026-10-08/jsonl-audit/README.md) | data pipelines and API interoperability | <!-- publication:2026-10-08 -->
 | 2026-10-09 | [JSONL Audit](tools/2026-10-09/jsonl-audit/README.md) | data pipelines and API interoperability | <!-- publication:2026-10-09 -->
 | 2026-10-13 | [file-manifest](tools/2026-10-13/file-manifest/README.md) | build artifacts and supply-chain integrity | <!-- publication:2026-10-13 -->
+| 2026-10-14 | [log-summary: Private-by-default log counts](tools/2026-10-14/log-summary/README.md) | observability and reliability engineering | <!-- publication:2026-10-14 -->

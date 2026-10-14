@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-14",
+  "account": "opsix-net",
+  "focus": "Practical software engineering, scientific research tools, and automation across sectors",
+  "title": "From Responsibilities to Reliable Tools: Designing Small Software Components",
+  "article": "articles/2026-10-14-responsibilities-to-reliable-tools.md",
+  "utility_kind": "log-summary",
+  "utility_title": "log-summary: Private-by-default log counts",
+  "utility_use_case": "A research engineer needs a quick error and severity overview of a large experiment log but should not copy message text containing identifiers into a notebook. Running `bash log-summary.sh --file application.log` provides line, severity, and default error-pattern counts as JSON for a lightweight status check. The totals help decide where to investigate next; they do not explain causes or replace a format-aware audit.",
+  "domain": "observability and reliability engineering",
+  "tags": [
+    "software-design",
+    "observability",
+    "reliability",
+    "log-analysis",
+    "developer-tools",
+    "research-software"
+  ],
+  "source": {
+    "book_label": "Data Structures and Algorithms in C++ 2e",
+    "section_title": "56 Chapter 1. A C++ Primer",
+    "book_sha256": "66d89e0825c485bb2c5261d98ebfa0d4e7d9bc85f964db6686ea371d050409a0",
+    "excerpt_sha256": "e0b258f27668e617bf25131ea415a20aae6e20c7497f0c048adf840558bf1124",
+    "excerpt_truncated": false
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_062d8de9cf7863e6016acfa7271ba087d0ab4e8fcae670dd28",
+    "usage": {
+      "input_tokens": 2860,
+      "input_tokens_details": {
+        "cache_write_tokens": 2857,
+        "cached_tokens": 0
+      },
+      "output_tokens": 3698,
+      "output_tokens_details": {
+        "reasoning_tokens": 114
+      },
+      "total_tokens": 6558
+    },
+    "generated_at": "2026-10-14T16:01:15.459015+00:00",
+    "estimated_standard_usd": 0.002135,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_0aef5580c88eeded016acfa74bc6f087d0a47895e7e24c7629",
+      "usage": {
+        "input_tokens": 6247,
+        "input_tokens_details": {
+          "cache_write_tokens": 6244,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1048,
+        "output_tokens_details": {
+          "reasoning_tokens": 996
+        },
+        "total_tokens": 7295
+      },
+      "reviewed_at": "2026-10-14T16:01:32.467642+00:00",
+      "summary": "No essential technical corrections found. The worked counts and the README’s documented behavior agree with the supplied utility source.",
+      "edits": [],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0011487000000000001
+    }
+  },
+  "validation": {
+    "article_words": 1609,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
