@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-15",
+  "account": "opsix-net",
+  "focus": "Practical software engineering, scientific research tools, and automation across sectors",
+  "title": "From Spring Physics to Reliable Simulation",
+  "article": "articles/2026-10-15-from-spring-physics-to-reliable-simulation.md",
+  "utility_kind": "jsonl-audit",
+  "utility_title": "jsonl-audit: Private-by-Design JSON Lines Checks",
+  "utility_use_case": "A research group receives JSONL exports from several instruments and an API. Before merging the files, an engineer runs jsonl-audit to identify malformed lines, records that are not objects, and fields whose observed types vary between sources. The summary helps prioritize schema review without printing measurement values. It is an initial structural check, not proof that the records satisfy the study's scientific protocol or the API's full contract.",
+  "domain": "data pipelines and API interoperability",
+  "tags": [
+    "scientific-computing",
+    "numerical-methods",
+    "ode",
+    "data-pipelines",
+    "jsonl",
+    "python",
+    "validation"
+  ],
+  "source": {
+    "book_label": "A Primer on Scientific Programming with Python",
+    "section_title": "0 as k ! 1.",
+    "book_sha256": "4472609dd465e39f318807dd735104dcdb5e7ffbaee7ffa65a1c1cf5a7d39feb",
+    "excerpt_sha256": "9d735be912b7428a146e2641d9f65755a272734941c7f8ff674e2605212ea773",
+    "excerpt_truncated": false
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_0e198090b608b893016ad0f8a6e1f087d0ba6af00c05dc9548",
+    "usage": {
+      "input_tokens": 3710,
+      "input_tokens_details": {
+        "cache_write_tokens": 3707,
+        "cached_tokens": 0
+      },
+      "output_tokens": 4301,
+      "output_tokens_details": {
+        "reasoning_tokens": 499
+      },
+      "total_tokens": 8011
+    },
+    "generated_at": "2026-10-15T16:01:21.841858+00:00",
+    "estimated_standard_usd": 0.0025215,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_0399c2cdc3408612016ad0f8d224dc87d0a7293487a315c554",
+      "usage": {
+        "input_tokens": 7318,
+        "input_tokens_details": {
+          "cache_write_tokens": 7315,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1239,
+        "output_tokens_details": {
+          "reasoning_tokens": 1078
+        },
+        "total_tokens": 8557
+      },
+      "reviewed_at": "2026-10-15T16:01:41.069463+00:00",
+      "summary": "Corrected the claim that accepted non-standard JSON constants can make summary serialization fail. The utility emits only type counts, not those values.",
+      "edits": [
+        {
+          "field": "utility_readme",
+          "old": "JSON numeric values are not checked for scientific validity or finiteness; moreover, non-standard constants accepted by Python's JSON parser may later cause output serialization to fail because the summary is emitted with non-finite numbers disallowed.",
+          "new": "JSON numeric values are not checked for scientific validity or finiteness. Python's JSON parser accepts non-standard constants such as NaN and Infinity by default; this utility counts them as floats and does not include their values in the summary."
+        }
+      ],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0013513000000000002
+    }
+  },
+  "validation": {
+    "article_words": 1437,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
