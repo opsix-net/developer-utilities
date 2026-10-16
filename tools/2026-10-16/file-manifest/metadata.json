@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-16",
+  "account": "opsix-net",
+  "focus": "Practical software engineering, scientific research tools, and automation across sectors",
+  "title": "From HTTP Response to Trustworthy Market Data",
+  "article": "articles/2026-10-16-trustworthy-market-data-public-apis.md",
+  "utility_kind": "file-manifest",
+  "utility_title": "Deterministic SHA-256 File Manifest",
+  "utility_use_case": "After a market-data research pipeline exports normalized CSV files, reports, and model inputs, run the manifest tool on the build-artifacts directory and retain its JSON output beside the run record. Later, generate a fresh manifest and compare the paths and hashes to find changed or missing files. The inventory helps with reproducibility and artifact review, but it cannot validate quote freshness, data licensing, analytical correctness, or provenance.",
+  "domain": "build artifacts and supply-chain integrity",
+  "tags": [
+    "rust",
+    "market-data",
+    "public-apis",
+    "json",
+    "research-tools",
+    "supply-chain"
+  ],
+  "source": {
+    "book_label": "Rust Programming for your First Finance Job- A Comprehensive -- Publishing, Reactive & Van Der Post, Hayden",
+    "section_title": "7.2 Fetching Market Data from Public APIs",
+    "book_sha256": "f957b918f2a75c5481f2efb6742dcf878e8a8ed459746f5284f92fd629831fcf",
+    "excerpt_sha256": "a5638faf7097dfecc08adac59a6e4f44be8272a8cb33c0a8f5cd321e9ddc554e",
+    "excerpt_truncated": false
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_0389b5c68cbc2590016ad24a0e548c87d09b8f5e2af529e973",
+    "usage": {
+      "input_tokens": 2674,
+      "input_tokens_details": {
+        "cache_write_tokens": 2671,
+        "cached_tokens": 0
+      },
+      "output_tokens": 4045,
+      "output_tokens_details": {
+        "reasoning_tokens": 111
+      },
+      "total_tokens": 6719
+    },
+    "generated_at": "2026-10-16T16:00:54.435837+00:00",
+    "estimated_standard_usd": 0.0022899,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_07d0f21e0b175928016ad24a36d80487d0a5420c5d74aeeded",
+      "usage": {
+        "input_tokens": 6413,
+        "input_tokens_details": {
+          "cache_write_tokens": 6410,
+          "cached_tokens": 0
+        },
+        "output_tokens": 2555,
+        "output_tokens_details": {
+          "reasoning_tokens": 2446
+        },
+        "total_tokens": 8968
+      },
+      "reviewed_at": "2026-10-16T16:01:30.653606+00:00",
+      "summary": "Corrected the rate-limit wording: a 12-second interval matches 5 requests per minute and should not be described as conservative.",
+      "edits": [
+        {
+          "field": "article_markdown",
+          "old": "A 12-second gap between request starts is a simple conservative schedule for this specific limit.",
+          "new": "A 12-second gap between request starts is a nominal pacing interval, not a safety margin for this specific limit."
+        }
+      ],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0019188000000000002
+    }
+  },
+  "validation": {
+    "article_words": 1733,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
