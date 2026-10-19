@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-19",
+  "account": "opsix-net",
+  "focus": "Practical software engineering, scientific research tools, and automation across sectors",
+  "title": "A Synchronous Machine After the Switch: Reading Transients Without Losing the Physics",
+  "article": "articles/2026-10-19-synchronous-machine-transient-phenomena.md",
+  "utility_kind": "file-manifest",
+  "utility_title": "Deterministic SHA-256 Inventory for Build Artifacts",
+  "utility_use_case": "Before sharing a computational research run or a software release candidate, inventory the artifact directory and retain the JSON with the run or release record. Later, a team can compare inventories or recompute file hashes to detect content changes. This supports reproducibility and build-artifact review, but it does not establish provenance, verify signatures, or guarantee that a build process was safe.",
+  "domain": "build artifacts and supply-chain integrity",
+  "tags": [
+    "electrical-machines",
+    "power-systems",
+    "transients",
+    "engineering",
+    "python",
+    "supply-chain"
+  ],
+  "source": {
+    "book_label": "Electrical Machines and Drives_ Fundamentals and Advanced Modelling",
+    "section_title": "30 Transient Phenomena in Electrical Machines",
+    "book_sha256": "8b45de0cd50769786bda3d1a554ecd005c3a25878b80448decadc53b60491542",
+    "excerpt_sha256": "601dad20810e6391e54f5599b4a873bfe8af7bdfb2f5878d2dcdece99c19e61f",
+    "excerpt_truncated": true
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_0472c7b6df062c5d016ad63e84e68087d0912173f7250bd95d",
+    "usage": {
+      "input_tokens": 6549,
+      "input_tokens_details": {
+        "cache_write_tokens": 6546,
+        "cached_tokens": 0
+      },
+      "output_tokens": 4180,
+      "output_tokens_details": {
+        "reasoning_tokens": 78
+      },
+      "total_tokens": 10729
+    },
+    "generated_at": "2026-10-19T16:00:55.365084+00:00",
+    "estimated_standard_usd": 0.0027449,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_0e9221368621c43d016ad63eb7956887d0ad2100dce1ca5daf",
+      "usage": {
+        "input_tokens": 10583,
+        "input_tokens_details": {
+          "cache_write_tokens": 10580,
+          "cached_tokens": 0
+        },
+        "output_tokens": 2760,
+        "output_tokens_details": {
+          "reasoning_tokens": 2552
+        },
+        "total_tokens": 13343
+      },
+      "reviewed_at": "2026-10-19T16:01:27.513406+00:00",
+      "summary": "Corrected the negative-sequence resistance assumptions and aligned CLI and filesystem-error documentation with the executable's behavior.",
+      "edits": [
+        {
+          "field": "article_markdown",
+          "old": "The section then solves the corresponding equations and, for a simplified result, neglects stator resistance.",
+          "new": "It first neglects rotor resistance relative to reactance at twice supply frequency, then neglects stator resistance for a simplified result."
+        },
+        {
+          "field": "utility_readme",
+          "old": "The tool accepts no file-list input and has one documented option, `--root`:",
+          "new": "The tool accepts no file-list input and requires `--root` (argparse also provides `--help`):"
+        },
+        {
+          "field": "utility_readme",
+          "old": "Permission errors and other filesystem errors are reported through argparse's error path.",
+          "new": "Errors raised while opening or statting files are reported through argparse's error path; traversal may skip inaccessible directories."
+        }
+      ],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0024383
+    }
+  },
+  "validation": {
+    "article_words": 1791,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
