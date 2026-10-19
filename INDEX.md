@@ -10,3 +10,4 @@
 | 2026-10-14 | [log-summary: Private-by-default log counts](tools/2026-10-14/log-summary/README.md) | observability and reliability engineering | <!-- publication:2026-10-14 -->
 | 2026-10-15 | [jsonl-audit: Private-by-Design JSON Lines Checks](tools/2026-10-15/jsonl-audit/README.md) | data pipelines and API interoperability | <!-- publication:2026-10-15 -->
 | 2026-10-16 | [Deterministic SHA-256 File Manifest](tools/2026-10-16/file-manifest/README.md) | build artifacts and supply-chain integrity | <!-- publication:2026-10-16 -->
+| 2026-10-19 | [Deterministic SHA-256 Inventory for Build Artifacts](tools/2026-10-19/file-manifest/README.md) | build artifacts and supply-chain integrity | <!-- publication:2026-10-19 -->
