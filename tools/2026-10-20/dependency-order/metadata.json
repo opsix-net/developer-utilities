@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-20",
+  "account": "opsix-net",
+  "focus": "Practical software engineering, scientific research tools, and automation across sectors",
+  "title": "Make Financial Charts Earn Their Ink",
+  "article": "articles/2026-10-20-make-financial-charts-earn-their-ink.md",
+  "utility_kind": "dependency-order",
+  "utility_title": "Dependency Order",
+  "utility_use_case": "A research team can encode preparation, analysis, and report-generation steps as task dependencies, then check that the pipeline has a valid deterministic order before execution. For example, a report depends on analysis, and analysis depends on ingestion. The utility detects blocked tasks when the declared graph contains a cycle; it does not execute the workflow.",
+  "domain": "build systems and workflow orchestration",
+  "tags": [
+    "data-visualization",
+    "financial-data",
+    "chart-design",
+    "build-systems",
+    "workflow-automation",
+    "python"
+  ],
+  "source": {
+    "book_label": "Data Visualization in Finance with Python_ A Comprehensive -- Schwartz, Alice & Van Der Post, Hayden -- 2024 -- Reactive Publishing",
+    "section_title": "CHAPTER 4: CRAFTING",
+    "book_sha256": "0aeb8dc74e849fc51dcf28515aaf0d197d1abd6f76eb994b72fb66ba61fd0057",
+    "excerpt_sha256": "5d2c24383f3baa743945fc85ea86615f5b47acce4045f4bf39a217526decea52",
+    "excerpt_truncated": true
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_03fd547c75fe228c016ad79004869887d0abbe24dde069ea9e",
+    "usage": {
+      "input_tokens": 4741,
+      "input_tokens_details": {
+        "cache_write_tokens": 4738,
+        "cached_tokens": 0
+      },
+      "output_tokens": 3912,
+      "output_tokens_details": {
+        "reasoning_tokens": 186
+      },
+      "total_tokens": 8653
+    },
+    "generated_at": "2026-10-20T16:00:52.096043+00:00",
+    "estimated_standard_usd": 0.0024300999999999997,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_0b59842e4e8cbf0c016ad790345ef887d0ab88bb9cff0a3a66",
+      "usage": {
+        "input_tokens": 8285,
+        "input_tokens_details": {
+          "cache_write_tokens": 8282,
+          "cached_tokens": 0
+        },
+        "output_tokens": 931,
+        "output_tokens_details": {
+          "reasoning_tokens": 847
+        },
+        "total_tokens": 9216
+      },
+      "reviewed_at": "2026-10-20T16:01:09.181581+00:00",
+      "summary": "Corrected the Q1-to-Q4 description: those figures show change within the year, not year-over-year change.",
+      "edits": [
+        {
+          "field": "article_markdown",
+          "old": "year-over-year change from Q1 to Q4",
+          "new": "change from Q1 to Q4"
+        }
+      ],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.001294
+    }
+  },
+  "validation": {
+    "article_words": 1719,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
