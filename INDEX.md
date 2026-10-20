@@ -11,3 +11,4 @@
 | 2026-10-15 | [jsonl-audit: Private-by-Design JSON Lines Checks](tools/2026-10-15/jsonl-audit/README.md) | data pipelines and API interoperability | <!-- publication:2026-10-15 -->
 | 2026-10-16 | [Deterministic SHA-256 File Manifest](tools/2026-10-16/file-manifest/README.md) | build artifacts and supply-chain integrity | <!-- publication:2026-10-16 -->
 | 2026-10-19 | [Deterministic SHA-256 Inventory for Build Artifacts](tools/2026-10-19/file-manifest/README.md) | build artifacts and supply-chain integrity | <!-- publication:2026-10-19 -->
+| 2026-10-20 | [Dependency Order](tools/2026-10-20/dependency-order/README.md) | build systems and workflow orchestration | <!-- publication:2026-10-20 -->
