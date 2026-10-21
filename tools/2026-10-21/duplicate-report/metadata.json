@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-21",
+  "account": "opsix-net",
+  "focus": "Practical software engineering, scientific research tools, and automation across sectors",
+  "title": "Reading Images by Their Frequencies",
+  "article": "articles/2026-10-21-reading-images-by-their-frequencies.md",
+  "utility_kind": "duplicate-report",
+  "utility_title": "Duplicate Report for Asset Pipelines",
+  "utility_use_case": "A microscopy team is preparing a large image archive for transfer to a collaborator. Before choosing a retention or packaging plan, an engineer runs `bash duplicate-report.sh --root ./assets` to identify byte-identical image files and estimate storage that might be redundant. The JSON output gives paths, file sizes, shared SHA-256 digests, and a potential byte total. The team can investigate whether duplicates are intentional, then make any archive changes through its normal reviewed process. The utility itself only reports and never deletes.",
+  "domain": "asset pipelines and storage engineering",
+  "tags": [
+    "image-processing",
+    "fourier-analysis",
+    "scientific-computing",
+    "python",
+    "storage-engineering",
+    "asset-pipelines"
+  ],
+  "source": {
+    "book_label": "Understanding Fourier Transforms with Python",
+    "section_title": "Chapter 6: Fourier Transform in Image Processing",
+    "book_sha256": "d48eee206fe3bafdafcdc45f5d51a17056b462d66ddd5c1e1d3e943b12f28c97",
+    "excerpt_sha256": "e1b7fcf6e7e36e62a28aa92645ca8fc63aa535e7ed52d16646ee51c41e600737",
+    "excerpt_truncated": true
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_0bc8355164b73f22016ad8e4e7508887d088107960c09449e7",
+    "usage": {
+      "input_tokens": 5429,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 5426
+      },
+      "output_tokens": 4070,
+      "output_tokens_details": {
+        "reasoning_tokens": 249
+      },
+      "total_tokens": 9499
+    },
+    "generated_at": "2026-10-21T16:15:16.206536+00:00",
+    "estimated_standard_usd": 0.0025779,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_02fd65270382d2ce016ad8e514500087d0aede2e8db3466ce8",
+      "usage": {
+        "input_tokens": 9074,
+        "input_tokens_details": {
+          "cache_write_tokens": 9071,
+          "cached_tokens": 0
+        },
+        "output_tokens": 3044,
+        "output_tokens_details": {
+          "reasoning_tokens": 2774
+        },
+        "total_tokens": 12118
+      },
+      "reviewed_at": "2026-10-21T16:15:43.180909+00:00",
+      "summary": "Qualified the convolution theorem for finite DFTs, clarified which symlinks and path components are skipped, and included per-file hashing overhead in the complexity description.",
+      "edits": [
+        {
+          "field": "article_markdown",
+          "old": "The convolution theorem explains why frequency methods are connected to familiar spatial filters: spatial convolution corresponds to multiplication in the frequency domain, and spatial multiplication corresponds to convolution in frequency.",
+          "new": "The convolution theorem explains why frequency methods are connected to familiar spatial filters: for a finite DFT, circular spatial convolution corresponds to coefficient-wise multiplication in frequency, while spatial multiplication corresponds, up to normalization, to circular convolution in frequency. Linear convolution requires suitable padding."
+        },
+        {
+          "field": "utility_readme",
+          "old": "Symbolic links and paths with any hidden component, meaning a path part beginning with `.`, are skipped.",
+          "new": "Symbolic links beneath the root and paths with any hidden component, meaning a relative path part beginning with `.`, are skipped."
+        },
+        {
+          "field": "utility_readme",
+          "old": "Hashing takes time proportional to $B$, with additional traversal, sorting, and bookkeeping costs.",
+          "new": "Hashing takes time proportional to $B$, plus per-file overhead, with additional traversal, sorting, and bookkeeping costs."
+        }
+      ],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0024294
+    }
+  },
+  "validation": {
+    "article_words": 1707,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}

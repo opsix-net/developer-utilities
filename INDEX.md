@@ -12,3 +12,4 @@
 | 2026-10-16 | [Deterministic SHA-256 File Manifest](tools/2026-10-16/file-manifest/README.md) | build artifacts and supply-chain integrity | <!-- publication:2026-10-16 -->
 | 2026-10-19 | [Deterministic SHA-256 Inventory for Build Artifacts](tools/2026-10-19/file-manifest/README.md) | build artifacts and supply-chain integrity | <!-- publication:2026-10-19 -->
 | 2026-10-20 | [Dependency Order](tools/2026-10-20/dependency-order/README.md) | build systems and workflow orchestration | <!-- publication:2026-10-20 -->
+| 2026-10-21 | [Duplicate Report for Asset Pipelines](tools/2026-10-21/duplicate-report/README.md) | asset pipelines and storage engineering | <!-- publication:2026-10-21 -->
