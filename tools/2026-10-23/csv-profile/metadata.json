@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-23",
+  "account": "opsix-net",
+  "focus": "Practical software engineering, scientific research tools, and automation across sectors",
+  "title": "Tuples at the Data Boundary: Unpacking Records Without Losing Their Shape",
+  "article": "articles/2026-10-23-tuples-data-boundary-csv-records.md",
+  "utility_kind": "csv-profile",
+  "utility_title": "CSV Profile: Check Missingness, Row Shape, and Numeric Ranges",
+  "utility_use_case": "Before loading a new batch of laboratory instrument measurements into a research pipeline, run `bash csv-profile.sh --file measurements.csv` to check for blank cells, rows with inconsistent field counts, and finite numeric summaries. Use the report to investigate format surprises and plan explicit validation. Do not interpret its descriptive statistics as significance tests, causal evidence, or confirmation that the measurements meet scientific limits.",
+  "domain": "analytics and data quality",
+  "tags": [
+    "python",
+    "data-quality",
+    "csv",
+    "scientific-computing",
+    "automation"
+  ],
+  "source": {
+    "book_label": "Hands-On Data Science and Python Machine Learning",
+    "section_title": "6 List of tuples",
+    "book_sha256": "95dfe38e4fdc62bd81fc555f9b3714f5ec801c9b147001d4a0e4fce3c5860003",
+    "excerpt_sha256": "d5b4f1e8925f0d0ad071033c5d7131b5c3a6c72a9de75bcbdb7fa2649e09b8ac",
+    "excerpt_truncated": false
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_0001516c8119c966016adb84bd733087d09edceeefa52bf35c",
+    "usage": {
+      "input_tokens": 4203,
+      "input_tokens_details": {
+        "cache_write_tokens": 4200,
+        "cached_tokens": 0
+      },
+      "output_tokens": 4233,
+      "output_tokens_details": {
+        "reasoning_tokens": 90
+      },
+      "total_tokens": 8436
+    },
+    "generated_at": "2026-10-23T16:01:35.648076+00:00",
+    "estimated_standard_usd": 0.0025368,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_027ff612f9522565016adb84dfb87887d0824570d1c71de49c",
+      "usage": {
+        "input_tokens": 8154,
+        "input_tokens_details": {
+          "cache_write_tokens": 8151,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1896,
+        "output_tokens_details": {
+          "reasoning_tokens": 1621
+        },
+        "total_tokens": 10050
+      },
+      "reviewed_at": "2026-10-23T16:01:54.439710+00:00",
+      "summary": "Corrected CSV record numbering to distinguish logical records from physical text lines, documented memory for the currently processed record, and noted that finite values can overflow the numeric accumulator.",
+      "edits": [
+        {
+          "field": "utility_readme",
+          "old": "`ragged_rows` lists their one-based CSV record line numbers where the number of fields differs from the header width.",
+          "new": "`ragged_rows` lists the CSV record numbers (counting the header as record 1) for data records whose number of fields differs from the header width."
+        },
+        {
+          "field": "utility_readme",
+          "old": "Memory use is $O(C + K)$, where $K$ is the number of ragged-row line numbers retained; it does not retain all well-formed rows.",
+          "new": "Memory use is $O(C + K + W)$, where $K$ is the number of ragged-row record numbers retained and $W$ is the size of the current CSV record; it does not retain all well-formed rows."
+        },
+        {
+          "field": "utility_readme",
+          "old": "Floating-point arithmetic also has ordinary representation and rounding limits.",
+          "new": "Floating-point arithmetic also has ordinary representation and rounding limits. Summing very large finite values can overflow, causing JSON output to fail."
+        }
+      ],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0017634
+    }
+  },
+  "validation": {
+    "article_words": 1646,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
