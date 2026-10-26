@@ -14,3 +14,4 @@
 | 2026-10-20 | [Dependency Order](tools/2026-10-20/dependency-order/README.md) | build systems and workflow orchestration | <!-- publication:2026-10-20 -->
 | 2026-10-21 | [Duplicate Report for Asset Pipelines](tools/2026-10-21/duplicate-report/README.md) | asset pipelines and storage engineering | <!-- publication:2026-10-21 -->
 | 2026-10-23 | [CSV Profile: Check Missingness, Row Shape, and Numeric Ranges](tools/2026-10-23/csv-profile/README.md) | analytics and data quality | <!-- publication:2026-10-23 -->
+| 2026-10-26 | [File Manifest: Deterministic SHA-256 Inventory](tools/2026-10-26/file-manifest/README.md) | build artifacts and supply-chain integrity | <!-- publication:2026-10-26 -->

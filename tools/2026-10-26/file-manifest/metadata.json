@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-26",
+  "account": "opsix-net",
+  "focus": "Practical software engineering, scientific research tools, and automation across sectors",
+  "title": "From Python Basics to Trustworthy Research Workflows",
+  "article": "articles/2026-10-26-python-basics-trustworthy-research-workflows.md",
+  "utility_kind": "file-manifest",
+  "utility_title": "File Manifest: Deterministic SHA-256 Inventory",
+  "utility_use_case": "A research team exports instrument results and analysis code into `./artifacts` before sharing a release. Running `bash file-manifest.sh --root ./artifacts` gives the team a sorted JSON inventory to retain alongside release notes or compare with a later export. This helps detect changed bytes or missing eligible files, while leaving the artifact directory untouched. The team still needs separate checks for scientific validity, provenance, hidden files, and any symlinked content because the utility intentionally does not assess those.",
+  "domain": "build artifacts and supply-chain integrity",
+  "tags": [
+    "python",
+    "research",
+    "reproducibility",
+    "build-tools",
+    "supply-chain"
+  ],
+  "source": {
+    "book_label": "Coding Black Scholes_ Mastering Algorithmic Options Trading -- Van Der Post, Hayden -- 2024 -- Reactive Publishing",
+    "section_title": "Chapter 2: Basics of Python Programming for Finance",
+    "book_sha256": "d5d5663033d21211e452a54a43826f303bf92bb519c9fa5ae7cf0c51018fc427",
+    "excerpt_sha256": "b4c5c3cfeafec278398ecdbb2c966d9fd1419b8e3cac194f5250570e3c6e2a0d",
+    "excerpt_truncated": true
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_02e4020c31c8bbf6016adf7903a35487d08e7cab56cdce5734",
+    "usage": {
+      "input_tokens": 4864,
+      "input_tokens_details": {
+        "cache_write_tokens": 4861,
+        "cached_tokens": 0
+      },
+      "output_tokens": 3898,
+      "output_tokens_details": {
+        "reasoning_tokens": 95
+      },
+      "total_tokens": 8762
+    },
+    "generated_at": "2026-10-26T16:01:01.573352+00:00",
+    "estimated_standard_usd": 0.0024354,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_0d2a7b5abe482e8b016adf793db68087d086032c10bbb8a358",
+      "usage": {
+        "input_tokens": 8479,
+        "input_tokens_details": {
+          "cache_write_tokens": 8476,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1965,
+        "output_tokens_details": {
+          "reasoning_tokens": 1794
+        },
+        "total_tokens": 10444
+      },
+      "reviewed_at": "2026-10-26T16:01:21.351609+00:00",
+      "summary": "The worked return calculations are correct. The README needs to disclose that directory-scanning errors may be suppressed, potentially leaving inaccessible subtrees out of the inventory without a diagnostic.",
+      "edits": [
+        {
+          "field": "utility_readme",
+          "old": "The tool does not lock files, verify permissions or provenance, inspect file formats, or write a manifest for later comparison.",
+          "new": "The tool does not lock files or verify permissions or provenance. `Path.rglob` may suppress directory-scanning errors, so inaccessible subtrees can be omitted without a diagnostic. It does not inspect file formats or write a manifest for later comparison."
+        }
+      ],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0018304
+    }
+  },
+  "validation": {
+    "article_words": 1600,
+    "glossary_terms": 9,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
