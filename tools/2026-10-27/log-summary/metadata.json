@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-27",
+  "account": "opsix-net",
+  "focus": "Practical software engineering, scientific research tools, and automation across sectors",
+  "title": "From Scores to Decisions: Reading Classifier Metrics Without Fooling Yourself",
+  "article": "articles/2026-10-27-classifier-scores-decisions-metrics.md",
+  "utility_kind": "log-summary",
+  "utility_title": "Log Severity and Pattern Summary",
+  "utility_use_case": "A reliability engineer investigating a deployment can run the summary over a protected application log to compare the number of error-severity lines with lines matching a targeted pattern, without copying message bodies into a ticket. The resulting counts are a quick descriptive check, not proof that the deployment caused an incident or that every relevant event was captured.",
+  "domain": "observability and reliability engineering",
+  "tags": [
+    "machine-learning",
+    "classification",
+    "metrics",
+    "observability",
+    "reliability",
+    "log-analysis"
+  ],
+  "source": {
+    "book_label": "Applied Data Science Using PySpark - Learn the End-to-End -- Ramcharan Kakarla & Sundar Krishnan & Sridhar Alla",
+    "section_title": "6.4.2.3 y-hat prediction to probability to final prediction",
+    "book_sha256": "ce66c6f40373d68683a4584e5be7ede6612c46a0459c7e9924317e6f1a0845a3",
+    "excerpt_sha256": "70b142ed7cc035b7c35a4eb3ca6ff32424ab014c878c64ea96de58605020b420",
+    "excerpt_truncated": true
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_08bb861174df7076016ae0ca84437c87d0997d2cfbf46e96bf",
+    "usage": {
+      "input_tokens": 5798,
+      "input_tokens_details": {
+        "cache_write_tokens": 5795,
+        "cached_tokens": 0
+      },
+      "output_tokens": 4061,
+      "output_tokens_details": {
+        "reasoning_tokens": 121
+      },
+      "total_tokens": 9859
+    },
+    "generated_at": "2026-10-27T16:00:52.093612+00:00",
+    "estimated_standard_usd": 0.0026103000000000003,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_0566ccad488979f5016ae0cab4aae887d0a6699f13d124af2e",
+      "usage": {
+        "input_tokens": 9542,
+        "input_tokens_details": {
+          "cache_write_tokens": 9539,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1523,
+        "output_tokens_details": {
+          "reasoning_tokens": 1407
+        },
+        "total_tokens": 11065
+      },
+      "reviewed_at": "2026-10-27T16:01:11.739007+00:00",
+      "summary": "Corrected the README to distinguish reported file and regex errors from invalid UTF-8 bytes, which the program replaces.",
+      "edits": [
+        {
+          "field": "utility_readme",
+          "old": "File, encoding, or invalid-regex errors are reported through the command-line parser rather than producing a partial summary.",
+          "new": "File or invalid-regex errors are reported through the command-line parser rather than producing a partial summary; invalid UTF-8 bytes are replaced."
+        }
+      ],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0017157000000000001
+    }
+  },
+  "validation": {
+    "article_words": 1613,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}

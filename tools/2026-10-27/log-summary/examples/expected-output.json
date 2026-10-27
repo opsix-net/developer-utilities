@@ -1,0 +1,9 @@
+{
+  "lines": 3,
+  "matching_lines": 1,
+  "severity_counts": {
+    "ERROR": 1,
+    "INFO": 1,
+    "WARN": 1
+  }
+}
