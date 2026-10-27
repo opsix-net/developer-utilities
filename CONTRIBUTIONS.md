@@ -10,3 +10,5 @@
 
 - [03:53] Daily activity entry
 
+- [08:00] Daily activity entry
+
