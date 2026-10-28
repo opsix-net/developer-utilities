@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-28",
+  "account": "opsix-net",
+  "focus": "Practical software engineering, scientific research tools, and automation across sectors",
+  "title": "Many Trees, Different Strategies: Understanding Ensemble Learning",
+  "article": "articles/2026-10-28-many-trees-different-strategies-ensemble-learning.md",
+  "utility_kind": "duplicate-report",
+  "utility_title": "Duplicate Report",
+  "utility_use_case": "A research group has accumulated exported images, instrument outputs, and intermediate assets across project folders. Before planning a storage cleanup, a maintainer runs `bash duplicate-report.sh --root ./assets` and reviews the JSON groups, checking whether repeated files are genuinely redundant or intentionally retained for separate workflows. Because the utility only reports and never deletes, the team can use its output as evidence for a separately reviewed cleanup plan.",
+  "domain": "asset pipelines and storage engineering",
+  "tags": [
+    "machine-learning",
+    "decision-trees",
+    "ensemble-learning",
+    "scientific-computing",
+    "storage-engineering",
+    "bash",
+    "python"
+  ],
+  "source": {
+    "book_label": "Mastering Machine Learning with Python in Six Steps",
+    "section_title": "Selected body passage",
+    "book_sha256": "0f47ac7f57152dd5be88a7c42278a3602331db9ffd5df58bf31c2e6cef0d8059",
+    "excerpt_sha256": "62a997ff997be7bce0bdffa7f9c1d9e0c0ecd699f153bdd9a199a434a93fa26c",
+    "excerpt_truncated": true
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_09d38555ae8fa88b016ae21c0443b087d09deb994978b5edb9",
+    "usage": {
+      "input_tokens": 5724,
+      "input_tokens_details": {
+        "cache_write_tokens": 5721,
+        "cached_tokens": 0
+      },
+      "output_tokens": 4049,
+      "output_tokens_details": {
+        "reasoning_tokens": 90
+      },
+      "total_tokens": 9773
+    },
+    "generated_at": "2026-10-28T16:00:41.052518+00:00",
+    "estimated_standard_usd": 0.0025969,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_02f480fd65447856016ae21c2a470487d0bf626db4e98362e8",
+      "usage": {
+        "input_tokens": 9506,
+        "input_tokens_details": {
+          "cache_write_tokens": 9503,
+          "cached_tokens": 0
+        },
+        "output_tokens": 2406,
+        "output_tokens_details": {
+          "reasoning_tokens": 2140
+        },
+        "total_tokens": 11912
+      },
+      "reviewed_at": "2026-10-28T16:01:10.197376+00:00",
+      "summary": "Corrected the README's absolute byte-identity claim to match its size-and-digest test, documented argparse's automatic --help option, and flagged that the passage fits PCA before splitting, which lets test-set information influence the projection.",
+      "edits": [
+        {
+          "field": "utility_readme",
+          "old": "`duplicate-report` scans a directory and reports groups of byte-identical files, along with their possible redundant storage.",
+          "new": "`duplicate-report` scans a directory and reports groups of files with matching sizes and SHA-256 digests, along with their possible redundant storage."
+        },
+        {
+          "field": "utility_readme",
+          "old": "There are no other supported command-line options.",
+          "new": "Argparse also provides `--help`; there are no other command-line options."
+        },
+        {
+          "field": "article_markdown",
+          "old": "The passage proposes projecting data onto the first two principal components so a model's regions can be plotted. PCA constructs new axes that capture directions of variation in the input features.",
+          "new": "In the passage's example, PCA is fitted to the full feature matrix before the train/test split, so information from the eventual test set influences the projection. PCA constructs new axes that capture directions of variation in the input features."
+        }
+      ],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0021536
+    }
+  },
+  "validation": {
+    "article_words": 1855,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
