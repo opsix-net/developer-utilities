@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-30",
+  "account": "opsix-net",
+  "focus": "Practical software engineering, scientific research tools, and automation across sectors",
+  "title": "NAND: One Small Rule, Many Boolean Circuits",
+  "article": "articles/2026-10-30-nand-boolean-rules-and-duplicate-reports.md",
+  "utility_kind": "duplicate-report",
+  "utility_title": "duplicate-report",
+  "utility_use_case": "A research imaging team can run the report on a staged asset directory before archiving a release. It can identify byte-identical exports and estimate possible storage savings while leaving every file untouched. Staff then review whether duplicates are accidental or required by the workflow.",
+  "domain": "asset pipelines and storage engineering",
+  "tags": [
+    "boolean-algebra",
+    "logic",
+    "software-engineering",
+    "storage",
+    "research-tools"
+  ],
+  "source": {
+    "book_label": "Boolean Algebra and Its Applications (Dover Books on -- J_ Eldon Whitesitt [Whitesitt, J_ Eldon] -- INscribe Digital, [N_p_], 2012",
+    "section_title": "1 (a) Choose suitable words to express this connective in English.",
+    "book_sha256": "b90068181f766dc6175b48c65ffd83c25f9a60651bb6aa7d788c5344f1d6b9da",
+    "excerpt_sha256": "83df54c19c62c340bdc54766b2bb7ca650be7346d20c441ea9cdb43eadaaced2",
+    "excerpt_truncated": false
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_0a2c07ab19bda4a9016ae4bf0431a487d0aaa0126a0970e3f5",
+    "usage": {
+      "input_tokens": 3940,
+      "input_tokens_details": {
+        "cache_write_tokens": 3937,
+        "cached_tokens": 0
+      },
+      "output_tokens": 3770,
+      "output_tokens_details": {
+        "reasoning_tokens": 185
+      },
+      "total_tokens": 7710
+    },
+    "generated_at": "2026-10-30T16:00:51.931017+00:00",
+    "estimated_standard_usd": 0.002279,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_01223b5172d63cde016ae4bf34730087d0b68fc209be167669",
+      "usage": {
+        "input_tokens": 7349,
+        "input_tokens_details": {
+          "cache_write_tokens": 7346,
+          "cached_tokens": 0
+        },
+        "output_tokens": 2564,
+        "output_tokens_details": {
+          "reasoning_tokens": 2340
+        },
+        "total_tokens": 9913
+      },
+      "reviewed_at": "2026-10-30T16:01:26.050747+00:00",
+      "summary": "Corrected the NAND-only implication formula, qualified file grouping by the utility’s actual SHA-256 matching criterion, and documented argparse’s built-in help option.",
+      "edits": [
+        {
+          "field": "article_markdown",
+          "old": "p \\to q = (p \\uparrow p) \\uparrow q",
+          "new": "p \\to q = p \\uparrow (q \\uparrow q)"
+        },
+        {
+          "field": "article_markdown",
+          "old": "groups identical files by SHA-256 content",
+          "new": "groups files with matching SHA-256 digests"
+        },
+        {
+          "field": "utility_readme",
+          "old": "reports groups of byte-identical files",
+          "new": "reports groups of files with matching SHA-256 digests"
+        },
+        {
+          "field": "utility_readme",
+          "old": "The command-line interface accepts the required `--root` directory argument; it has no other documented options.",
+          "new": "The command-line interface accepts the required `--root` directory argument and the standard `-h`/`--help` option."
+        }
+      ],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0020169000000000003
+    }
+  },
+  "validation": {
+    "article_words": 1407,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}

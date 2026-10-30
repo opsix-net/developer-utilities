@@ -17,3 +17,4 @@
 | 2026-10-26 | [File Manifest: Deterministic SHA-256 Inventory](tools/2026-10-26/file-manifest/README.md) | build artifacts and supply-chain integrity | <!-- publication:2026-10-26 -->
 | 2026-10-27 | [Log Severity and Pattern Summary](tools/2026-10-27/log-summary/README.md) | observability and reliability engineering | <!-- publication:2026-10-27 -->
 | 2026-10-28 | [Duplicate Report](tools/2026-10-28/duplicate-report/README.md) | asset pipelines and storage engineering | <!-- publication:2026-10-28 -->
+| 2026-10-30 | [duplicate-report](tools/2026-10-30/duplicate-report/README.md) | asset pipelines and storage engineering | <!-- publication:2026-10-30 -->
