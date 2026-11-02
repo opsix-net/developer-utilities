@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-02",
+  "account": "opsix-net",
+  "focus": "Practical software engineering, scientific research tools, and automation across sectors",
+  "title": "When a Projection Changes the Shape of a Feasible Set",
+  "article": "articles/2026-11-02-spectrahedral-shadows-projections-and-data-quality.md",
+  "utility_kind": "csv-profile",
+  "utility_title": "CSV Profile: A Fast Structural Check Before Analysis",
+  "utility_use_case": "Before fitting a sensor model or preparing measurements for semidefinite optimization, run `csv-profile` to spot blank fields, malformed row widths, and unexpected numeric ranges. Use the JSON as a triage report, then apply domain-specific validation and document any cleaning decisions. The profile is descriptive and does not establish statistical significance or causation.",
+  "domain": "analytics and data quality",
+  "tags": [
+    "optimization",
+    "semidefinite-programming",
+    "convex-geometry",
+    "scientific-computing",
+    "data-quality",
+    "csv"
+  ],
+  "source": {
+    "book_label": "Geometry of Linear Matrix Inequalities_ A Course in -- Tim Netzer, Daniel Plaumann -- Compact Textbooks in Mathematics",
+    "section_title": "Selected body passage",
+    "book_sha256": "c731fe1bece5db241376ebe7600b7917e7752c6418c968deba4988aff1b5453b",
+    "excerpt_sha256": "5b8ba20606d4279a7a0ff6eaef3a54f24d124f59b003b662b484d9f2c5d9b8e9",
+    "excerpt_truncated": true
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_0dae342f3265a8ac016ae8c19437cc87d0983b555a563208fc",
+    "usage": {
+      "input_tokens": 6107,
+      "input_tokens_details": {
+        "cache_write_tokens": 6104,
+        "cached_tokens": 0
+      },
+      "output_tokens": 4001,
+      "output_tokens_details": {
+        "reasoning_tokens": 334
+      },
+      "total_tokens": 10108
+    },
+    "generated_at": "2026-11-02T17:00:55.160020+00:00",
+    "estimated_standard_usd": 0.0026111999999999997,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_0c05e4492736ea9f016ae8c1c7c52887d09e856e2e6367ca00",
+      "usage": {
+        "input_tokens": 9733,
+        "input_tokens_details": {
+          "cache_write_tokens": 9730,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1721,
+        "output_tokens_details": {
+          "reasoning_tokens": 1410
+        },
+        "total_tokens": 11454
+      },
+      "reviewed_at": "2026-11-02T17:01:12.365039+00:00",
+      "summary": "Corrected the utility documentation and glossary to distinguish logical CSV record numbers from physical line numbers, and documented floating-point sum overflow that can prevent JSON output.",
+      "edits": [
+        {
+          "field": "utility_readme",
+          "old": "`ragged_rows` lists their one-based file line numbers, starting with line 2, for records whose field count differs from the header.",
+          "new": "`ragged_rows` lists their CSV record numbers, starting with 2 for the first data record, for records whose field count differs from the header."
+        },
+        {
+          "field": "utility_readme",
+          "old": "Parsed nonfinite values, including NaN and infinities, are also excluded.",
+          "new": "Parsed nonfinite values, including NaN and infinities, are also excluded. The sum of included finite values can nevertheless overflow for extreme data, preventing JSON output."
+        },
+        {
+          "field": "utility_readme",
+          "old": "The reported line number is the CSV reader's record enumeration, which may not match physical lines when quoted fields contain embedded newlines.",
+          "new": "The reported record number is the CSV reader's record enumeration, which may not match physical lines when quoted fields contain embedded newlines."
+        }
+      ],
+      "glossary_edits": [
+        {
+          "term": "Ragged CSV row",
+          "definition": "A CSV record whose parsed field count differs from the header's field count. In `csv-profile`, such records are reported by CSV record number, which may differ from physical line number, and excluded from per-column statistics."
+        }
+      ],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0018338000000000002
+    }
+  },
+  "validation": {
+    "article_words": 1601,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
