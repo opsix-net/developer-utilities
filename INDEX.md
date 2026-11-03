@@ -19,3 +19,4 @@
 | 2026-10-28 | [Duplicate Report](tools/2026-10-28/duplicate-report/README.md) | asset pipelines and storage engineering | <!-- publication:2026-10-28 -->
 | 2026-10-30 | [duplicate-report](tools/2026-10-30/duplicate-report/README.md) | asset pipelines and storage engineering | <!-- publication:2026-10-30 -->
 | 2026-11-02 | [CSV Profile: A Fast Structural Check Before Analysis](tools/2026-11-02/csv-profile/README.md) | analytics and data quality | <!-- publication:2026-11-02 -->
+| 2026-11-03 | [duplicate-report](tools/2026-11-03/duplicate-report/README.md) | asset pipelines and storage engineering | <!-- publication:2026-11-03 -->

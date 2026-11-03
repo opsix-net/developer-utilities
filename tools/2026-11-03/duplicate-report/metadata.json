@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-03",
+  "account": "opsix-net",
+  "focus": "Practical software engineering, scientific research tools, and automation across sectors",
+  "title": "From Ordered History to Predictions: Building Time-Series Features",
+  "article": "articles/2026-11-03-ordered-history-time-series-prediction.md",
+  "utility_kind": "duplicate-report",
+  "utility_title": "duplicate-report",
+  "utility_use_case": "In a research or media pipeline, repeated exports can quietly consume storage and make it harder to identify the authoritative asset. Run `bash duplicate-report.sh --root ./assets` before an archive or storage review to get a machine-readable inventory of byte-identical files and estimated redundant bytes. Researchers can retain the JSON report with the project record, then inspect each group and decide manually whether copies are safe to remove. The report is evidence for review, not an automatic cleanup decision.",
+  "domain": "asset pipelines and storage engineering",
+  "tags": [
+    "time-series",
+    "machine-learning",
+    "algorithmic-trading",
+    "python",
+    "data-engineering",
+    "storage"
+  ],
+  "source": {
+    "book_label": "Python for algorithmic trading - from idea to cloud -- Yves J Hilpisch",
+    "section_title": "Chapter 5. Predicting Market Movements with Machine Learning",
+    "book_sha256": "aad8a79a663ca442a9c6ce1b026f542192745abd24552c4cfe17b4bf897dc1bd",
+    "excerpt_sha256": "c2113acd1de2eedff4fbc0fb36c26bd8390516309728b3bc7f6e5e24ae30db60",
+    "excerpt_truncated": false
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_035d2324c59f5439016aea1315ba1487d0a9c3914b749c1680",
+    "usage": {
+      "input_tokens": 3828,
+      "input_tokens_details": {
+        "cache_write_tokens": 3825,
+        "cached_tokens": 0
+      },
+      "output_tokens": 3772,
+      "output_tokens_details": {
+        "reasoning_tokens": 341
+      },
+      "total_tokens": 7600
+    },
+    "generated_at": "2026-11-03T17:00:42.851625+00:00",
+    "estimated_standard_usd": 0.0022688,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_057465afe731c0c2016aea133b48d487d0b67df8c8e648a91a",
+      "usage": {
+        "input_tokens": 7083,
+        "input_tokens_details": {
+          "cache_write_tokens": 7080,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1114,
+        "output_tokens_details": {
+          "reasoning_tokens": 993
+        },
+        "total_tokens": 8197
+      },
+      "reviewed_at": "2026-11-03T17:00:55.663242+00:00",
+      "summary": "Corrected the CLI description to account for argparse's built-in `--help` option. The worked arithmetic and other audited technical claims are correct.",
+      "edits": [
+        {
+          "field": "utility_readme",
+          "old": "The tool does not accept file patterns, a deletion mode, or other options beyond the required root argument.",
+          "new": "The tool does not accept file patterns, a deletion mode, or other operational options beyond the required root argument; `--help` displays usage."
+        }
+      ],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0012653000000000002
+    }
+  },
+  "validation": {
+    "article_words": 1408,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
