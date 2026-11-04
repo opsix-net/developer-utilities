@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-04",
+  "account": "opsix-net",
+  "focus": "Practical software engineering, scientific research tools, and automation across sectors",
+  "title": "A Green Test Run Is a Starting Point, Not a Guarantee",
+  "article": "articles/2026-11-04-green-test-run-not-guarantee.md",
+  "utility_kind": "duplicate-report",
+  "utility_title": "duplicate-report",
+  "utility_use_case": "A research group can scan a staged microscopy export directory before archiving it. The report provides exact-content groups and a potential redundant-byte estimate, helping the team prioritize review. Researchers still decide whether copies serve distinct provenance or workflow needs; the utility only reports and never removes files.",
+  "domain": "asset pipelines and storage engineering",
+  "tags": [
+    "testing",
+    "python",
+    "automation",
+    "storage",
+    "research-tools"
+  ],
+  "source": {
+    "book_label": "Serious Python - black-belt advice on deployment",
+    "section_title": "Selected body passage",
+    "book_sha256": "94155e51a2950d9734df820ff3dccb7cc251de5301d17bc071a99e938d39b24b",
+    "excerpt_sha256": "25c0cd6053f3539060810218e5fc7ee5bb5a6a27e9567c4e031227677e837c28",
+    "excerpt_truncated": true
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_02f27596794e6fdc016aeb6494604c87d09c508038d85855cf",
+    "usage": {
+      "input_tokens": 5149,
+      "input_tokens_details": {
+        "cache_write_tokens": 5146,
+        "cached_tokens": 0
+      },
+      "output_tokens": 3403,
+      "output_tokens_details": {
+        "reasoning_tokens": 69
+      },
+      "total_tokens": 8552
+    },
+    "generated_at": "2026-11-04T17:00:43.145944+00:00",
+    "estimated_standard_usd": 0.0022164,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_0e73c0f9b9a26de4016aeb64bbc6e887d086795702b9a220eb",
+      "usage": {
+        "input_tokens": 8308,
+        "input_tokens_details": {
+          "cache_write_tokens": 8305,
+          "cached_tokens": 0
+        },
+        "output_tokens": 2585,
+        "output_tokens_details": {
+          "reasoning_tokens": 2335
+        },
+        "total_tokens": 10893
+      },
+      "reviewed_at": "2026-11-04T17:01:10.587112+00:00",
+      "summary": "Qualified claims that matching SHA-256 digests establish byte identity. The utility groups files by size and digest, which is strong practical evidence but not a mathematical proof of identical bytes.",
+      "edits": [
+        {
+          "field": "article_markdown",
+          "old": "A report of matching hashes establishes byte identity for the files examined, not that the files are operationally interchangeable.",
+          "new": "Matching file sizes and hashes are strong evidence that the files have identical bytes, not proof or a sign that they are operationally interchangeable."
+        },
+        {
+          "field": "utility_readme",
+          "old": "Files are grouped as duplicates only when both size and digest match.",
+          "new": "Files are reported as duplicates only when both size and digest match. As with any hash-based comparison, this is strong practical evidence, not a mathematical proof of byte identity."
+        }
+      ],
+      "glossary_edits": [
+        {
+          "term": "SHA-256",
+          "definition": "A cryptographic hash function that maps file bytes to a fixed-length digest. The duplicate-report utility groups files when their sizes and SHA-256 digests match. This is strong practical evidence of identical bytes, not a mathematical proof or evidence that files are interchangeable in a workflow."
+        }
+      ],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0021233000000000003
+    }
+  },
+  "validation": {
+    "article_words": 1472,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
