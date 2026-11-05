@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-05",
+  "account": "opsix-net",
+  "focus": "Practical software engineering, scientific research tools, and automation across sectors",
+  "title": "From Messy Reality to Rules a Computer Can Run",
+  "article": "articles/2026-11-05-from-messy-reality-to-rules-a-computer-can-run.md",
+  "utility_kind": "log-summary",
+  "utility_title": "Privacy-Conscious Log Summary",
+  "utility_use_case": "A reliability engineer or research-software maintainer can run the utility over an application log before sharing a high-level incident summary. It gives counts of standard severity labels and matching lines while avoiding message text in the report. A scientist can use a pattern such as `timeout|retry` to inspect how often a class of event appears during a run, then compare the descriptive counts with experiment metadata. The result is an aggregate for triage, not a substitute for secure log review or a causal or significance analysis.",
+  "domain": "observability and reliability engineering",
+  "tags": [
+    "software-engineering",
+    "computational-thinking",
+    "automation",
+    "observability",
+    "reliability",
+    "research-tools"
+  ],
+  "source": {
+    "book_label": "Computational Thinking_ A Beginner’s Guide to Problem-Solving and Programming",
+    "section_title": "231 COMPUTATIONAL THINKING",
+    "book_sha256": "01684617fba36ed5fca4c4343ba01c2cdbb75d4dd8394dcf5782a1000f4756a9",
+    "excerpt_sha256": "d923c30d8c5994b7379e038a664a1f4d641220b2ab2cb34331590e331dc3047e",
+    "excerpt_truncated": false
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_0713c9b34fcc4891016aecb614646087d0a8096ed801939a86",
+    "usage": {
+      "input_tokens": 1918,
+      "input_tokens_details": {
+        "cache_write_tokens": 1915,
+        "cached_tokens": 0
+      },
+      "output_tokens": 3799,
+      "output_tokens_details": {
+        "reasoning_tokens": 119
+      },
+      "total_tokens": 5717
+    },
+    "generated_at": "2026-11-05T17:00:44.305755+00:00",
+    "estimated_standard_usd": 0.0020913000000000004,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_0da551aec956bffa016aecb63cb78887d09230589fff7954ed",
+      "usage": {
+        "input_tokens": 5401,
+        "input_tokens_details": {
+          "cache_write_tokens": 5398,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1315,
+        "output_tokens_details": {
+          "reasoning_tokens": 1161
+        },
+        "total_tokens": 6716
+      },
+      "reviewed_at": "2026-11-05T17:01:00.056244+00:00",
+      "summary": "The source-based discussion overlooks that the radiator rules can overlap when the target temperature is below 18 degrees. The utility README matches the executable source, and the worked numeric example checks out.",
+      "edits": [
+        {
+          "field": "article_markdown",
+          "old": "If the two rules control the same device, equality can leave the device’s state unspecified unless another rule or a retained-state policy covers it.",
+          "new": "If the two rules control the same device, equality can leave the device’s state unspecified unless another rule or a retained-state policy covers it. If the target is below 18 degrees, the conditions also overlap and can issue conflicting commands."
+        }
+      ],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0011975999999999998
+    }
+  },
+  "validation": {
+    "article_words": 1749,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
