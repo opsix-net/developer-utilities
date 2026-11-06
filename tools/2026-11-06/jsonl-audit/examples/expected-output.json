@@ -1,0 +1,19 @@
+{
+  "fields": {
+    "active": {
+      "missing": 1,
+      "types": {
+        "bool": 1
+      }
+    },
+    "id": {
+      "missing": 0,
+      "types": {
+        "int": 2
+      }
+    }
+  },
+  "invalid_lines": [],
+  "ok": true,
+  "valid_records": 2
+}

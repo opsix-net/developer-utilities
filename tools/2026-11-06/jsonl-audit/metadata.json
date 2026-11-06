@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-06",
+  "account": "opsix-net",
+  "focus": "Practical software engineering, scientific research tools, and automation across sectors",
+  "title": "Time Series Analysis: Respect the Clock Before You Forecast",
+  "article": "articles/2026-11-06-time-series-analysis-respect-the-clock.md",
+  "utility_kind": "jsonl-audit",
+  "utility_title": "jsonl-audit",
+  "utility_use_case": "A research team receives JSON Lines telemetry and finance-adjacent feeds from several APIs. Before converting records into a timestamped table for chronology checks and rolling analysis, the team runs jsonl-audit to flag malformed JSON objects and fields whose observed types vary across records. The value-free summary helps identify ingestion problems without placing record contents in a terminal report. Analysts still validate timestamp meaning, units, sampling cadence, missing-data policy, and scientific assumptions separately.",
+  "domain": "data pipelines and API interoperability",
+  "tags": [
+    "time-series",
+    "finance",
+    "data-engineering",
+    "python",
+    "research-tools",
+    "jsonl"
+  ],
+  "source": {
+    "book_label": "Python & R- The dynamic duo for Finance- A comprehensive",
+    "section_title": "Chapter 4: Time Series Analysis Fundamentals",
+    "book_sha256": "61ec449554752df0f23480ddd6295cbb522ef6b0a0979df9e9d86a95b35a6e90",
+    "excerpt_sha256": "3ad26557680a0275a0dff003ffada427885f49978fbd520c2c285b075b0530f0",
+    "excerpt_truncated": true
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_0ab6d7e62f4a1f54016aee0793ec3887d0a8905e269de7a095",
+    "usage": {
+      "input_tokens": 5311,
+      "input_tokens_details": {
+        "cache_write_tokens": 5308,
+        "cached_tokens": 0
+      },
+      "output_tokens": 4050,
+      "output_tokens_details": {
+        "reasoning_tokens": 100
+      },
+      "total_tokens": 9361
+    },
+    "generated_at": "2026-11-06T17:00:52.213463+00:00",
+    "estimated_standard_usd": 0.0025561,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_0c6841f1ae364f6b016aee07c5869887d09353a0ba569bad00",
+      "usage": {
+        "input_tokens": 9068,
+        "input_tokens_details": {
+          "cache_write_tokens": 9065,
+          "cached_tokens": 0
+        },
+        "output_tokens": 1010,
+        "output_tokens_details": {
+          "reasoning_tokens": 878
+        },
+        "total_tokens": 10078
+      },
+      "reviewed_at": "2026-11-06T17:01:06.054769+00:00",
+      "summary": "Corrected the README's claim about non-standard JSON numeric constants. The worked calculations and other audited claims are accurate.",
+      "edits": [
+        {
+          "field": "utility_readme",
+          "old": "JSON numeric values are decoded according to Python's JSON behavior, and unusual non-standard numeric constants may fail when the final report is serialized.",
+          "new": "JSON numeric values are decoded according to Python's JSON behavior. Non-standard numeric constants such as `NaN` are accepted by default and counted as floats; their values are not included in the report."
+        }
+      ],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0014118000000000002
+    }
+  },
+  "validation": {
+    "article_words": 1703,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
