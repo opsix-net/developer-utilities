@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-09",
+  "account": "opsix-net",
+  "focus": "Practical software engineering, scientific research tools, and automation across sectors",
+  "title": "Reading Regression Tests Without Fooling Yourself",
+  "article": "articles/2026-11-09-reading-regression-tests-without-fooling-yourself.md",
+  "utility_kind": "log-summary",
+  "utility_title": "log-summary",
+  "utility_use_case": "A reliability engineer investigating an intermittent service slowdown can run the utility on an application log to get a quick count of severity labels and lines matching terms such as `timeout`. The JSON can feed a dashboard or an incident notebook without embedding message text, which helps avoid moving sensitive details into summary artifacts. Counts help prioritize follow-up, but they do not identify root cause, unique incidents, or statistical significance. In a research workflow, the same aggregates can be recorded alongside experimental conditions for descriptive monitoring. The regression topic motivates disciplined interpretation of measurements: like coefficient tests, log counts are evidence with a scope and assumptions, not an automatic explanation of a system. The book section does not specify this utility; it is an engineering companion for collecting compact observability summaries.",
+  "domain": "observability and reliability engineering",
+  "tags": [
+    "statistics",
+    "regression",
+    "reliability",
+    "observability",
+    "python",
+    "bash"
+  ],
+  "source": {
+    "book_label": "Statistics for Big Data For Dummies",
+    "section_title": "2.764 3.169",
+    "book_sha256": "99cc1217d35dd51388fb0ba195b0969f7690392b7261d4018c9bc9edb0833ebb",
+    "excerpt_sha256": "fd711a48c573ae1ee226b540005f877140f07d546ff7023828aedb7a0edf7f17",
+    "excerpt_truncated": false
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_05839e637ab12d30016af1fc13ba0887d0a3fa7efea5c99e43",
+    "usage": {
+      "input_tokens": 1952,
+      "input_tokens_details": {
+        "cache_write_tokens": 1949,
+        "cached_tokens": 0
+      },
+      "output_tokens": 4230,
+      "output_tokens_details": {
+        "reasoning_tokens": 284
+      },
+      "total_tokens": 6182
+    },
+    "generated_at": "2026-11-09T17:00:46.499960+00:00",
+    "estimated_standard_usd": 0.0023101999999999997,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_07e19da03462c251016af1fc3f974087d0abb1f78194ed0777",
+      "usage": {
+        "input_tokens": 5701,
+        "input_tokens_details": {
+          "cache_write_tokens": 5698,
+          "cached_tokens": 0
+        },
+        "output_tokens": 570,
+        "output_tokens_details": {
+          "reasoning_tokens": 516
+        },
+        "total_tokens": 6271
+      },
+      "reviewed_at": "2026-11-09T17:00:59.622949+00:00",
+      "summary": "No essential technical corrections found. The worked examples and reported decisions are consistent, and the utility README matches the executable source.",
+      "edits": [],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0008551
+    }
+  },
+  "validation": {
+    "article_words": 1843,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
