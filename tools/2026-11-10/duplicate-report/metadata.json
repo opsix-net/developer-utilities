@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-10",
+  "account": "opsix-net",
+  "focus": "Practical software engineering, scientific research tools, and automation across sectors",
+  "title": "Logic Design Beyond the Gate Count",
+  "article": "articles/2026-11-10-logic-design-beyond-gate-count.md",
+  "utility_kind": "duplicate-report",
+  "utility_title": "Duplicate File Report for Asset Pipelines",
+  "utility_use_case": "A research group may receive the same raw instrument export through multiple project handoffs, while a media or software asset pipeline may copy identical files into separate folders. Run `bash duplicate-report.sh --root ./assets` to identify exact byte matches and estimate duplicate bytes while preserving every file. Engineers can use the JSON to prioritize a human review against ownership, backup, and retention rules before any separate cleanup process.",
+  "domain": "asset pipelines and storage engineering",
+  "tags": [
+    "digital-logic",
+    "integrated-circuits",
+    "hardware-design",
+    "asset-pipelines",
+    "storage-engineering",
+    "python",
+    "automation"
+  ],
+  "source": {
+    "book_label": "Digital Principles and Logic Design",
+    "section_title": "5.8 COMBINATIONAL LOGIC WITH MSI AND LSI",
+    "book_sha256": "3adbcd6a7da22c4411bf6d82f76ef0290b47e2d86cb0894c4ac5d47fc8d0a951",
+    "excerpt_sha256": "bc6b486645d719df36aabe6d7012efd6b2010010984c7513c3fa5824a0b4dd94",
+    "excerpt_truncated": false
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_0113c49603f29e8c016af34d93658887d09bebc05177c7c737",
+    "usage": {
+      "input_tokens": 2039,
+      "input_tokens_details": {
+        "cache_write_tokens": 2036,
+        "cached_tokens": 0
+      },
+      "output_tokens": 3808,
+      "output_tokens_details": {
+        "reasoning_tokens": 69
+      },
+      "total_tokens": 5847
+    },
+    "generated_at": "2026-11-10T17:00:43.803415+00:00",
+    "estimated_standard_usd": 0.0021079000000000002,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_0fcdb52c989754b2016af34dbc77ec87d0b84f8acea5a30051",
+      "usage": {
+        "input_tokens": 5600,
+        "input_tokens_details": {
+          "cache_write_tokens": 5597,
+          "cached_tokens": 0
+        },
+        "output_tokens": 2523,
+        "output_tokens_details": {
+          "reasoning_tokens": 2234
+        },
+        "total_tokens": 8123
+      },
+      "reviewed_at": "2026-11-10T17:01:17.525126+00:00",
+      "summary": "Corrected the README to describe SHA-256 digest matching rather than guaranteed byte-for-byte identity. The article’s package counts and numerical example are consistent with the supplied information.",
+      "edits": [
+        {
+          "field": "utility_readme",
+          "old": "groups of byte-identical files",
+          "new": "groups of files with matching SHA-256 digests"
+        },
+        {
+          "field": "utility_readme",
+          "old": "exact-content comparison",
+          "new": "SHA-256 digest comparison"
+        },
+        {
+          "field": "utility_readme",
+          "old": "It reads file contents as bytes, so the report applies to exact byte identity. It does not interpret file formats, normalize text, or compare semantic equivalence. Two images that look alike but have different bytes are not reported as duplicates.",
+          "new": "It does not interpret file formats or normalize text. Files are grouped only when their sizes and SHA-256 digests match, so the report is a practical duplicate indicator, not byte-by-byte proof of identity."
+        },
+        {
+          "field": "utility_readme",
+          "old": "For a group of $n$ identical files, each of size $s$ bytes, the reported potential is $s(n-1)$ bytes.",
+          "new": "For a group of $n$ files with the same size and digest, each of size $s$ bytes, the reported potential is $s(n-1)$ bytes."
+        }
+      ],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0018215
+    }
+  },
+  "validation": {
+    "article_words": 1688,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
