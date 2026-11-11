@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-11",
+  "account": "opsix-net",
+  "focus": "Practical software engineering, scientific research tools, and automation across sectors",
+  "title": "From Hexagons to Hard Decisions: What Central Place Theory Teaches Location Models",
+  "article": "articles/2026-11-11-central-place-theory-location-models.md",
+  "utility_kind": "matrix-audit",
+  "utility_title": "Matrix Audit",
+  "utility_use_case": "A researcher building a small linear model for allocating resources across service regions can use Matrix Audit to check whether the constraint matrix has full rank and which columns are pivots before interpreting a solution. Exact rank and determinant checks can reveal redundant equations or a singular square subsystem in a toy or verification case. The tool does not determine whether the model’s geographic assumptions, demand estimates, or policy objective are valid.",
+  "domain": "scientific computing and engineering",
+  "tags": [
+    "geography",
+    "optimization",
+    "location-models",
+    "scientific-computing",
+    "linear-algebra"
+  ],
+  "source": {
+    "book_label": "Discrete Diversity and Dispersion Maximization _ A Tutorial -- Rafael Martí, Anna Martínez-Gavara, (eds_) -- Springer",
+    "section_title": "2.4 Central Place Theory",
+    "book_sha256": "ddde3518bb7375bc8a165ab4249bd9b0a7033dd72c9af6d964b1f2c4ba74b0a5",
+    "excerpt_sha256": "41c66cdd2c3040a7af01ddfad23c2fff838d85195c3723936f830468035f759b",
+    "excerpt_truncated": false
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_0695f19fc0087816016af49f13e14087d08c143cc9cbb968f7",
+    "usage": {
+      "input_tokens": 4866,
+      "input_tokens_details": {
+        "cache_write_tokens": 4863,
+        "cached_tokens": 0
+      },
+      "output_tokens": 3758,
+      "output_tokens_details": {
+        "reasoning_tokens": 205
+      },
+      "total_tokens": 8624
+    },
+    "generated_at": "2026-11-11T17:00:48.994390+00:00",
+    "estimated_standard_usd": 0.0023656,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_00e9beff86b18ee1016af49f41811087d0b66739058ad15e20",
+      "usage": {
+        "input_tokens": 8231,
+        "input_tokens_details": {
+          "cache_write_tokens": 8228,
+          "cached_tokens": 0
+        },
+        "output_tokens": 2465,
+        "output_tokens_details": {
+          "reasoning_tokens": 2277
+        },
+        "total_tokens": 10696
+      },
+      "reviewed_at": "2026-11-11T17:01:26.743265+00:00",
+      "summary": "Clarified how the utility applies its entry-length limit and how JSON decimal and exponent numbers are interpreted before exact rational calculations.",
+      "edits": [
+        {
+          "field": "utility_readme",
+          "old": "Individual entry representations are limited to 80 characters.",
+          "new": "The string form of each parsed entry is limited to 80 characters."
+        },
+        {
+          "field": "utility_readme",
+          "old": "Values must be parseable by Python’s exact `Fraction` type. This is an exact rational calculation, not floating-point tolerance-based analysis.",
+          "new": "Values are converted with `Fraction(str(value))`. JSON integers and strings are interpreted exactly after parsing; JSON decimal or exponent numbers are first parsed as Python floats, so use strings to preserve their exact decimal or rational values. The calculation then uses exact rational arithmetic, not floating-point tolerance-based analysis."
+        }
+      ],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0020556
+    }
+  },
+  "validation": {
+    "article_words": 1702,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
