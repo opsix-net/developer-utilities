@@ -25,3 +25,4 @@
 | 2026-11-06 | [jsonl-audit](tools/2026-11-06/jsonl-audit/README.md) | data pipelines and API interoperability | <!-- publication:2026-11-06 -->
 | 2026-11-09 | [log-summary](tools/2026-11-09/log-summary/README.md) | observability and reliability engineering | <!-- publication:2026-11-09 -->
 | 2026-11-10 | [Duplicate File Report for Asset Pipelines](tools/2026-11-10/duplicate-report/README.md) | asset pipelines and storage engineering | <!-- publication:2026-11-10 -->
+| 2026-11-11 | [Matrix Audit](tools/2026-11-11/matrix-audit/README.md) | scientific computing and engineering | <!-- publication:2026-11-11 -->
