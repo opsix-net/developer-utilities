@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-12",
+  "account": "opsix-net",
+  "focus": "Practical software engineering, scientific research tools, and automation across sectors",
+  "title": "From Dangling Bonds to Dependency Graphs: How Local Constraints Shape Systems",
+  "article": "articles/2026-11-12-dangling-bonds-dependency-graphs.md",
+  "utility_kind": "dependency-order",
+  "utility_title": "dependency-order",
+  "utility_use_case": "A research team can model a reproducible analysis pipeline as named tasks: validate raw measurements, calibrate instruments, fit a model, and generate a report. Listing prerequisites in JSON and checking them with `dependency-order` catches cycles before a long computation starts. The result validates ordering only, so the team still needs to confirm that all real data dependencies are represented and that each scientific method is appropriate.",
+  "domain": "build systems and workflow orchestration",
+  "tags": [
+    "solid-state-physics",
+    "materials-science",
+    "build-systems",
+    "workflow-automation",
+    "graph-algorithms"
+  ],
+  "source": {
+    "book_label": "Solid-State Physics for Electronics",
+    "section_title": "302 Solid-State Physics for Electronics",
+    "book_sha256": "d021b11fd17ff6b81d292b8e6180095bd6b5882ab3067fd85369002d4300db98",
+    "excerpt_sha256": "1896b8088dbfb31e48358b0b8f615b34e46ff7d1630cf7febf3cd6612efa8fbc",
+    "excerpt_truncated": false
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_06636df66aad0db0016af5f09457f887d0a967c1a2663d82f7",
+    "usage": {
+      "input_tokens": 2284,
+      "input_tokens_details": {
+        "cache_write_tokens": 2281,
+        "cached_tokens": 0
+      },
+      "output_tokens": 3792,
+      "output_tokens_details": {
+        "reasoning_tokens": 262
+      },
+      "total_tokens": 6076
+    },
+    "generated_at": "2026-11-12T17:00:42.508812+00:00",
+    "estimated_standard_usd": 0.0021244000000000002,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_0631eff4d5393250016af5f0bb8e0887d091cfbc22783df504",
+      "usage": {
+        "input_tokens": 5632,
+        "input_tokens_details": {
+          "cache_write_tokens": 5629,
+          "cached_tokens": 0
+        },
+        "output_tokens": 880,
+        "output_tokens_details": {
+          "reasoning_tokens": 781
+        },
+        "total_tokens": 6512
+      },
+      "reviewed_at": "2026-11-12T17:00:56.673975+00:00",
+      "summary": "Corrected the worked example’s displayed energy expression for one doubly occupied site and two singly occupied sites.",
+      "edits": [
+        {
+          "field": "article_markdown",
+          "old": "The total energy is $2(2\\epsilon+U)+?$",
+          "new": "The total energy is $(2\\epsilon+U)+2\\epsilon=4\\epsilon+U$"
+        }
+      ],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0010032
+    }
+  },
+  "validation": {
+    "article_words": 1641,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
