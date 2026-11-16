@@ -1,0 +1,12 @@
+{
+  "arithmetic": "exact rational",
+  "columns": 2,
+  "determinant": "-2",
+  "pivot_columns_zero_based": [
+    0,
+    1
+  ],
+  "rank": 2,
+  "rows": 2,
+  "singular": false
+}

@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-16",
+  "account": "opsix-net",
+  "focus": "Practical software engineering, scientific research tools, and automation across sectors",
+  "title": "When a Model Is Right, What Does That Cost?",
+  "article": "articles/2026-11-16-model-evaluation-costs-and-matrix-audits.md",
+  "utility_kind": "matrix-audit",
+  "utility_title": "matrix-audit",
+  "utility_use_case": "A research engineer assembling an exact rational calibration or constraint matrix can run `matrix-audit` before a downstream solve. Rank and pivot columns reveal dependent columns, and a zero determinant flags a singular square matrix. This is an algebraic preflight check, separate from evaluating a prediction model against held-out observations.",
+  "domain": "scientific computing and engineering",
+  "tags": [
+    "model-evaluation",
+    "machine-learning",
+    "scientific-computing",
+    "linear-algebra",
+    "python",
+    "engineering"
+  ],
+  "source": {
+    "book_label": "PRACTITIONERS GUIDE TO DATA SCIENCE - streamlining data -- Mirza, Nasir Ali;",
+    "section_title": "8 A clustering algorithm",
+    "book_sha256": "b11b5eabcde598bd0b65ce00412c541706bff74e826fb5cc0b12d85f45a18151",
+    "excerpt_sha256": "a0f19c54c8f6713db311dc6aba652b5d35ccd9facc2be458bd4a0935300e1209",
+    "excerpt_truncated": false
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_0c1e9b933282496e016afb3694abc887d0898bc13d61372ed6",
+    "usage": {
+      "input_tokens": 3865,
+      "input_tokens_details": {
+        "cache_write_tokens": 3862,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3862
+        },
+        "cached_tokens": 0
+      },
+      "output_tokens": 4139,
+      "output_tokens_details": {
+        "reasoning_tokens": 75
+      },
+      "total_tokens": 8004
+    },
+    "generated_at": "2026-11-16T17:00:42.812345+00:00",
+    "estimated_standard_usd": 0.002456,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_0e441e507fac4684016afb36bb4e8087d0a4be47a8097ec4ca",
+      "usage": {
+        "input_tokens": 7736,
+        "input_tokens_details": {
+          "cache_write_tokens": 7733,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 7733
+          },
+          "cached_tokens": 0
+        },
+        "output_tokens": 2146,
+        "output_tokens_details": {
+          "reasoning_tokens": 1788
+        },
+        "total_tokens": 9882
+      },
+      "reviewed_at": "2026-11-16T17:01:08.449970+00:00",
+      "summary": "Corrected the precision caveat for JSON fractional inputs and specified the ordinary least-squares-with-intercept setting for the adjusted R² formula.",
+      "edits": [
+        {
+          "field": "article_markdown",
+          "old": "The `matrix-audit` utility computes those properties exactly for rational inputs.",
+          "new": "The `matrix-audit` utility computes those properties exactly for integer and rational-string inputs; JSON fractional numbers are parsed as floats first."
+        },
+        {
+          "field": "article_markdown",
+          "old": "A common form is $1-(1-R^2)(n-1)/(n-p-1)$, with $p$ predictors and enough observations for the denominator to be positive.",
+          "new": "For ordinary least squares with an intercept, a common form is $1-(1-R^2)(n-1)/(n-p-1)$, with $p$ predictors and enough observations for the denominator to be positive."
+        },
+        {
+          "field": "utility_readme",
+          "old": "The input may be square or rectangular, must have 1 to 100 rows and 1 to 100 columns, and every row must have the same length. Entries are converted to exact rational values using Python's `Fraction`; rational strings such as `\"1/3\"` are supported.",
+          "new": "The input may be square or rectangular, must have 1 to 100 rows and 1 to 100 columns, and every row must have the same length. Entries are converted using Python's `Fraction`. Integers and rational strings such as `\"1/3\"` retain exact values; JSON fractional numbers are parsed as floats before conversion, so use rational strings when exact decimal or rational input matters."
+        }
+      ],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0018465999999999999
+    }
+  },
+  "validation": {
+    "article_words": 1756,
+    "glossary_terms": 11,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
