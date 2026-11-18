@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-18",
+  "account": "opsix-net",
+  "focus": "Practical software engineering, scientific research tools, and automation across sectors",
+  "title": "From Market Mood to Observable Systems: Building Trustworthy Sentiment Workflows",
+  "article": "articles/2026-11-18-trustworthy-sentiment-workflows.md",
+  "utility_kind": "log-summary",
+  "utility_title": "Log Summary Utility",
+  "utility_use_case": "After a research or trading-system batch, run the utility on the application log to summarize severity counts and lines matching a failure pattern. This helps an operator notice an operational change without copying potentially sensitive message text into a notebook or report. Treat the summary as a triage aid: investigate the source logs through approved access controls, and assess model validity with separate tests.",
+  "domain": "observability and reliability engineering",
+  "tags": [
+    "software-engineering",
+    "observability",
+    "sentiment-analysis",
+    "research-tools",
+    "reliability"
+  ],
+  "source": {
+    "book_label": "Sentiment Analysis in Trading",
+    "section_title": "Chapter 12: The Future of Sentiment Analysis in Trading",
+    "book_sha256": "1a0e45fa4dc38c39b0b3704f368118f6cf316960aedc60b7935485ddc568096f",
+    "excerpt_sha256": "8f95dbc74322c3882fe7d24ac050f7cb336d9d347a259b6125f5e82565fbe9d1",
+    "excerpt_truncated": true
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_0264887a09b581f8016afdd994fd6c87d08badf08f5eb7d393",
+    "usage": {
+      "input_tokens": 4127,
+      "input_tokens_details": {
+        "cache_write_tokens": 4124,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 4124
+        },
+        "cached_tokens": 0
+      },
+      "output_tokens": 3861,
+      "output_tokens_details": {
+        "reasoning_tokens": 65
+      },
+      "total_tokens": 7988
+    },
+    "generated_at": "2026-11-18T17:00:44.561118+00:00",
+    "estimated_standard_usd": 0.0023431999999999997,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_0e566f592181ec9b016afdd9bd8e1487d0b9dc553d1cf36c16",
+      "usage": {
+        "input_tokens": 7852,
+        "input_tokens_details": {
+          "cache_write_tokens": 7849,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 7849
+          },
+          "cached_tokens": 0
+        },
+        "output_tokens": 766,
+        "output_tokens_details": {
+          "reasoning_tokens": 616
+        },
+        "total_tokens": 8618
+      },
+      "reviewed_at": "2026-11-18T17:00:55.905838+00:00",
+      "summary": "The worked example arithmetic and the documented CLI behavior match the supplied data and executable source. Corrected the memory bound to account for the line held during processing.",
+      "edits": [
+        {
+          "field": "utility_readme",
+          "old": "memory beyond the regex and counters is $O(k)$, where $k$ is the number of distinct severity labels, bounded by the fixed severity set.",
+          "new": "memory beyond the regex and counters is $O(k + L)$, where $k$ is the number of distinct severity labels, bounded by the fixed severity set, and $L$ is the length of the longest input line."
+        }
+      ],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0011682
+    }
+  },
+  "validation": {
+    "article_words": 1838,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}

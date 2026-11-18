@@ -28,3 +28,4 @@
 | 2026-11-11 | [Matrix Audit](tools/2026-11-11/matrix-audit/README.md) | scientific computing and engineering | <!-- publication:2026-11-11 -->
 | 2026-11-12 | [dependency-order](tools/2026-11-12/dependency-order/README.md) | build systems and workflow orchestration | <!-- publication:2026-11-12 -->
 | 2026-11-16 | [matrix-audit](tools/2026-11-16/matrix-audit/README.md) | scientific computing and engineering | <!-- publication:2026-11-16 -->
+| 2026-11-18 | [Log Summary Utility](tools/2026-11-18/log-summary/README.md) | observability and reliability engineering | <!-- publication:2026-11-18 -->
