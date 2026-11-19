@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-19",
+  "account": "opsix-net",
+  "focus": "Practical software engineering, scientific research tools, and automation across sectors",
+  "title": "When “Close Enough” Breaks a Data Model",
+  "article": "articles/2026-11-19-when-close-enough-breaks-a-data-model.md",
+  "utility_kind": "duplicate-report",
+  "utility_title": "Duplicate Report for Asset Pipelines",
+  "utility_use_case": "A research team maintains a shared directory of microscopy images and processed exports. Before archiving a release, an engineer runs `bash duplicate-report.sh --root ./assets` to identify byte-identical files and estimate potentially redundant storage. The report helps the team focus a manual review, while leaving decisions about provenance, retention, and cleanup to maintainers.",
+  "domain": "asset pipelines and storage engineering",
+  "tags": [
+    "semantic-modeling",
+    "knowledge-graphs",
+    "data-quality",
+    "storage",
+    "bash",
+    "python"
+  ],
+  "source": {
+    "book_label": "Semantic modeling for data - avoiding pitfalls and breaking -- Panos Alexopoulos; Safari, an OReilly Media Company",
+    "section_title": "Chapter 7. Bad Semantics",
+    "book_sha256": "f1a94501937bcd5df0366b6dec769190545794be495e6c1d314f768280b669aa",
+    "excerpt_sha256": "c25a27c0f4e4545f9a32946bafcc8eb39198e9a0eed7adb61f99a5dc9b41720b",
+    "excerpt_truncated": true
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_0cfca07270cf4fa9016aff2b154e8087d0846a8b3a3f405766",
+    "usage": {
+      "input_tokens": 5005,
+      "input_tokens_details": {
+        "cache_write_tokens": 5002,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 5002
+        },
+        "cached_tokens": 0
+      },
+      "output_tokens": 3793,
+      "output_tokens_details": {
+        "reasoning_tokens": 116
+      },
+      "total_tokens": 8798
+    },
+    "generated_at": "2026-11-19T17:00:51.005604+00:00",
+    "estimated_standard_usd": 0.002397,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_0f431385bb049fef016aff2b442f8c87d087056579de9bfe82",
+      "usage": {
+        "input_tokens": 8506,
+        "input_tokens_details": {
+          "cache_write_tokens": 8503,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 8503
+          },
+          "cached_tokens": 0
+        },
+        "output_tokens": 1697,
+        "output_tokens_details": {
+          "reasoning_tokens": 1552
+        },
+        "total_tokens": 10203
+      },
+      "reviewed_at": "2026-11-19T17:01:14.778805+00:00",
+      "summary": "Clarified that the 35 RDF-store documents are included in the 120 broad results, so the stated 85 additional documents follows from the example.",
+      "edits": [
+        {
+          "field": "article_markdown",
+          "old": "Imagine there are 120 documents tagged with the broad graph-database concept, and 35 tagged specifically with RDF stores.",
+          "new": "Imagine there are 120 documents tagged with the broad graph-database concept, of which 35 are also tagged specifically as RDF stores."
+        }
+      ],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0016990999999999998
+    }
+  },
+  "validation": {
+    "article_words": 1710,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}

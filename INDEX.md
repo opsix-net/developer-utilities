@@ -29,3 +29,4 @@
 | 2026-11-12 | [dependency-order](tools/2026-11-12/dependency-order/README.md) | build systems and workflow orchestration | <!-- publication:2026-11-12 -->
 | 2026-11-16 | [matrix-audit](tools/2026-11-16/matrix-audit/README.md) | scientific computing and engineering | <!-- publication:2026-11-16 -->
 | 2026-11-18 | [Log Summary Utility](tools/2026-11-18/log-summary/README.md) | observability and reliability engineering | <!-- publication:2026-11-18 -->
+| 2026-11-19 | [Duplicate Report for Asset Pipelines](tools/2026-11-19/duplicate-report/README.md) | asset pipelines and storage engineering | <!-- publication:2026-11-19 -->
