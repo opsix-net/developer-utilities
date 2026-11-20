@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-20",
+  "account": "opsix-net",
+  "focus": "Practical software engineering, scientific research tools, and automation across sectors",
+  "title": "From Historical Data to Reliable Automation: The Unseen Work of Backtesting",
+  "article": "articles/2026-11-20-reliable-automation-backtesting.md",
+  "utility_kind": "matrix-audit",
+  "utility_title": "matrix-audit",
+  "utility_use_case": "A researcher or engineer can use matrix-audit during a data or model validation step to identify linearly dependent columns in a small feature or constraint matrix. Exact rank and pivot indices make the structural check reproducible, while a determinant is available for square matrices. The result is a diagnostic, not evidence that a signal predicts an outcome or that a strategy is profitable.",
+  "domain": "scientific computing and engineering",
+  "tags": [
+    "software-engineering",
+    "scientific-computing",
+    "linear-algebra",
+    "automation",
+    "backtesting"
+  ],
+  "source": {
+    "book_label": "Advanced Options Strategies",
+    "section_title": "Chapter 9: Automating Trading and Backtesting",
+    "book_sha256": "d9cbd20fec3da119345157bc4ad112b299f2f905b79645020982d0a058ce47db",
+    "excerpt_sha256": "9f16da6ac5aaf0dd43fb8afa75ad78cf18ad2a5514174c1913ab6b94a2af13bd",
+    "excerpt_truncated": true
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_06371cee054045f4016b007c94f0b087d094abfe6539204d89",
+    "usage": {
+      "input_tokens": 4434,
+      "input_tokens_details": {
+        "cache_write_tokens": 4431,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 4431
+        },
+        "cached_tokens": 0
+      },
+      "output_tokens": 3862,
+      "output_tokens_details": {
+        "reasoning_tokens": 268
+      },
+      "total_tokens": 8296
+    },
+    "generated_at": "2026-11-20T17:00:41.599070+00:00",
+    "estimated_standard_usd": 0.0023744,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_03464750382335fb016b007cba250887d08a24aba5673eb73b",
+      "usage": {
+        "input_tokens": 7841,
+        "input_tokens_details": {
+          "cache_write_tokens": 7838,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 7838
+          },
+          "cached_tokens": 0
+        },
+        "output_tokens": 1218,
+        "output_tokens_details": {
+          "reasoning_tokens": 1132
+        },
+        "total_tokens": 9059
+      },
+      "reviewed_at": "2026-11-20T17:00:56.966179+00:00",
+      "summary": "Corrected the example’s opening question to describe what matrix rank establishes: whether the columns span independent directions.",
+      "edits": [
+        {
+          "field": "article_markdown",
+          "old": "whether all three columns add independent information in this small design",
+          "new": "whether the three columns span independent directions in this small design"
+        }
+      ],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0013931
+    }
+  },
+  "validation": {
+    "article_words": 1632,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
