@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-23",
+  "account": "opsix-net",
+  "focus": "Practical software engineering, scientific research tools, and automation across sectors",
+  "title": "Neighbors, Noise, and the Shape of a Decision",
+  "article": "articles/2026-11-23-neighbors-noise-and-the-shape-of-a-decision.md",
+  "utility_kind": "duplicate-report",
+  "utility_title": "Duplicate Report",
+  "utility_use_case": "A lab's image-analysis pipeline writes raw microscope captures, derived thumbnails, and packaged exports into several project folders. Before a storage review, a developer can run `bash duplicate-report.sh --root ./assets`, save the JSON report, and investigate repeated exact copies. The report can help identify accidental re-exports or duplicated pipeline outputs. It does not establish that files are scientifically interchangeable, and it never removes them. Researchers must verify provenance, references, and retention rules before any separate cleanup.",
+  "domain": "asset pipelines and storage engineering",
+  "tags": [
+    "machine-learning",
+    "data-science",
+    "research-tools",
+    "storage",
+    "automation"
+  ],
+  "source": {
+    "book_label": "Data Science for Dummies, 2nd Edition",
+    "section_title": "102 PART 2 Using Data Science to Extract Meaning from Your Data",
+    "book_sha256": "f2509c78025361ff6069320bcb68c144ba22493071d92dad6426aa71ccd0a811",
+    "excerpt_sha256": "d000a4301fdaeec6249f441310b4cf06288b18f867da985c0475e8ca701e4a1c",
+    "excerpt_truncated": false
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_0e080f81067a46dd016b0471142ce887d0a91f55edc9d0d4ab",
+    "usage": {
+      "input_tokens": 2393,
+      "input_tokens_details": {
+        "cache_write_tokens": 2390,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2390
+        },
+        "cached_tokens": 0
+      },
+      "output_tokens": 3901,
+      "output_tokens_details": {
+        "reasoning_tokens": 121
+      },
+      "total_tokens": 6294
+    },
+    "generated_at": "2026-11-23T17:00:45.452702+00:00",
+    "estimated_standard_usd": 0.0021898,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_06539b9613ec8210016b04713de0ac87d08bda867ad890d550",
+      "usage": {
+        "input_tokens": 5997,
+        "input_tokens_details": {
+          "cache_write_tokens": 5994,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 5994
+          },
+          "cached_tokens": 0
+        },
+        "output_tokens": 1829,
+        "output_tokens_details": {
+          "reasoning_tokens": 1700
+        },
+        "total_tokens": 7826
+      },
+      "reviewed_at": "2026-11-23T17:01:05.570513+00:00",
+      "summary": "Clarified that a symlink supplied as the root is accepted and scanned, unlike symlinks encountered beneath it. The worked-example distances, votes, and utility behavior otherwise check out.",
+      "edits": [
+        {
+          "field": "utility_readme",
+          "old": "The root must be a directory. The scan skips symlinks and hidden paths.",
+          "new": "The root must be a directory, though the supplied root may itself be a symlink to one. The scan skips symlinks encountered beneath it and hidden paths."
+        }
+      ],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0015142
+    }
+  },
+  "validation": {
+    "article_words": 1621,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
