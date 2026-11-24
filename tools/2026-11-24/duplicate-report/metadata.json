@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-24",
+  "account": "opsix-net",
+  "focus": "Practical software engineering, scientific research tools, and automation across sectors",
+  "title": "A Small P-Value Is Not the Whole Result",
+  "article": "articles/2026-11-24-small-p-value-not-whole-result.md",
+  "utility_kind": "duplicate-report",
+  "utility_title": "Duplicate Report for Asset Pipelines",
+  "utility_use_case": "Before archiving a research asset tree or a production build directory, run the report to find byte-identical copies and estimate possible storage savings. Review the listed paths with application owners before changing anything. The utility is intentionally read-only and cannot determine whether duplicate paths are semantically interchangeable.",
+  "domain": "asset pipelines and storage engineering",
+  "tags": [
+    "statistics",
+    "research",
+    "software-engineering",
+    "storage",
+    "asset-pipelines"
+  ],
+  "source": {
+    "book_label": "Math for Deep Learning - What You Need to Know to Understand",
+    "section_title": "0.8 Large",
+    "book_sha256": "9cf46d47cd53522ef1a2d3f87e580004205a1c77a75d83b2937135c24f2c2b17",
+    "excerpt_sha256": "2cb63f020699b04af59926ff84ae10431b05c2c0bb6311be2a5fa563bc024c0b",
+    "excerpt_truncated": false
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_05123df4710db3cd016b05c294392887d0a6b25c2017574ce5",
+    "usage": {
+      "input_tokens": 3088,
+      "input_tokens_details": {
+        "cache_write_tokens": 3085,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 3085
+        },
+        "cached_tokens": 0
+      },
+      "output_tokens": 4430,
+      "output_tokens_details": {
+        "reasoning_tokens": 126
+      },
+      "total_tokens": 7518
+    },
+    "generated_at": "2026-11-24T17:00:47.710468+00:00",
+    "estimated_standard_usd": 0.0025238,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_09d8a8f3f432350c016b05c2c01cf087d0a99279d7689decaf",
+      "usage": {
+        "input_tokens": 7217,
+        "input_tokens_details": {
+          "cache_write_tokens": 7214,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 7214
+          },
+          "cached_tokens": 0
+        },
+        "output_tokens": 3727,
+        "output_tokens_details": {
+          "reasoning_tokens": 3501
+        },
+        "total_tokens": 10944
+      },
+      "reviewed_at": "2026-11-24T17:01:21.561781+00:00",
+      "summary": "Corrected the Welch degrees of freedom and associated rounded values in the worked example, and corrected the README’s complexity claim to account for sorting and path storage.",
+      "edits": [
+        {
+          "field": "article_markdown",
+          "old": "2.4275",
+          "new": "2.4276"
+        },
+        {
+          "field": "article_markdown",
+          "old": "\\approx 52.1",
+          "new": "\\approx 52.9"
+        },
+        {
+          "field": "article_markdown",
+          "old": "2.007",
+          "new": "2.006"
+        },
+        {
+          "field": "utility_readme",
+          "old": "If there are $N$ eligible files and $B$ bytes across files that need hashing, traversal and bookkeeping are proportional to the number of paths, while hashing work is proportional to $B$.",
+          "new": "If there are $N$ eligible files and $B$ bytes across files that need hashing, the sorted traversal and bookkeeping require $O(N\\log N)$ time and $O(N)$ path storage, while hashing work is proportional to $B$."
+        }
+      ],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0025851999999999997
+    }
+  },
+  "validation": {
+    "article_words": 1827,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
