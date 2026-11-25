@@ -33,3 +33,4 @@
 | 2026-11-20 | [matrix-audit](tools/2026-11-20/matrix-audit/README.md) | scientific computing and engineering | <!-- publication:2026-11-20 -->
 | 2026-11-23 | [Duplicate Report](tools/2026-11-23/duplicate-report/README.md) | asset pipelines and storage engineering | <!-- publication:2026-11-23 -->
 | 2026-11-24 | [Duplicate Report for Asset Pipelines](tools/2026-11-24/duplicate-report/README.md) | asset pipelines and storage engineering | <!-- publication:2026-11-24 -->
+| 2026-11-25 | [matrix-audit](tools/2026-11-25/matrix-audit/README.md) | scientific computing and engineering | <!-- publication:2026-11-25 -->

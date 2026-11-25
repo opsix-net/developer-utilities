@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-25",
+  "account": "opsix-net",
+  "focus": "Practical software engineering, scientific research tools, and automation across sectors",
+  "title": "When a Volatility Forecast Is Not a Tail Forecast",
+  "article": "articles/2026-11-25-when-volatility-forecast-is-not-tail-forecast.md",
+  "utility_kind": "matrix-audit",
+  "utility_title": "matrix-audit",
+  "utility_use_case": "Before a portfolio-risk test uses a small covariance example or a matrix-based constraint fixture, run matrix-audit to verify its exact rank, pivots, and determinant. A deficient rank may reveal redundant columns in a constructed example, but this check alone cannot validate covariance forecasts or establish positive semidefiniteness.",
+  "domain": "scientific computing and engineering",
+  "tags": [
+    "financial-risk",
+    "econometrics",
+    "garch",
+    "backtesting",
+    "scientific-computing",
+    "linear-algebra"
+  ],
+  "source": {
+    "book_label": "Market Risk Analysis [vol 2] - Practical Financial Econometrics.pdf",
+    "section_title": "360 Practical Financial Econometrics",
+    "book_sha256": "b33a7966d7f6c3b8b051867719714db7fbd029a9a7a22d3852bfe563e98c1abf",
+    "excerpt_sha256": "4e7d6519f0442b0c5ab715d18518ff101ffeb6d5964c07eac4f44878256f80fd",
+    "excerpt_truncated": false
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_0c4465ec7fc0df84016b071414ce0087d0978ca28b01507c4b",
+    "usage": {
+      "input_tokens": 2758,
+      "input_tokens_details": {
+        "cache_write_tokens": 2755,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2755
+        },
+        "cached_tokens": 0
+      },
+      "output_tokens": 3860,
+      "output_tokens_details": {
+        "reasoning_tokens": 178
+      },
+      "total_tokens": 6618
+    },
+    "generated_at": "2026-11-25T17:00:39.424770+00:00",
+    "estimated_standard_usd": 0.0022058000000000004,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_08bb8b15cc157401016b071438063487d090905c42b111435a",
+      "usage": {
+        "input_tokens": 6377,
+        "input_tokens_details": {
+          "cache_write_tokens": 6374,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 6374
+          },
+          "cached_tokens": 0
+        },
+        "output_tokens": 1397,
+        "output_tokens_details": {
+          "reasoning_tokens": 1307
+        },
+        "total_tokens": 7774
+      },
+      "reviewed_at": "2026-11-25T17:00:53.920717+00:00",
+      "summary": "Corrected the null log-likelihood and unconditional-coverage statistic in the worked example.",
+      "edits": [
+        {
+          "field": "article_markdown",
+          "old": "-6.7254",
+          "new": "-6.3903"
+        },
+        {
+          "field": "article_markdown",
+          "old": "1.2336",
+          "new": "0.5634"
+        }
+      ],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0013362
+    }
+  },
+  "validation": {
+    "article_words": 1743,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
