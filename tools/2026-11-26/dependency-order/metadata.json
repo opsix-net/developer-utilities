@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-26",
+  "account": "opsix-net",
+  "focus": "Practical software engineering, scientific research tools, and automation across sectors",
+  "title": "From Market Data to Reproducible Analysis",
+  "article": "articles/2026-11-26-market-data-analysis-reproducible-workflows.md",
+  "utility_kind": "dependency-order",
+  "utility_title": "dependency-order",
+  "utility_use_case": "Before launching a reproducible research or build pipeline, encode task prerequisites in JSON and run dependency-order to verify that the graph admits a valid order. This catches cycles that could stall workflow orchestration, without making claims about the scientific validity of the tasks themselves.",
+  "domain": "build systems and workflow orchestration",
+  "tags": [
+    "python",
+    "finance",
+    "time-series",
+    "data-engineering",
+    "workflow"
+  ],
+  "source": {
+    "book_label": "Python Fundamentals for Finance- A survey of Algorithmic",
+    "section_title": "Chapter 3: Python-based Market Data Analysis",
+    "book_sha256": "ddfcdfc331a670ff7c5e88132e691092f95661dec387e46416113e449a057176",
+    "excerpt_sha256": "70a9ec3c25ae46e447efc6d82b1d58a8faeebaf116b74372992eac7fb194adec",
+    "excerpt_truncated": false
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_07837b9efd21f6dd016b0865943f0087d0babe9ed5df56d7f3",
+    "usage": {
+      "input_tokens": 4695,
+      "input_tokens_details": {
+        "cache_write_tokens": 4692,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 4692
+        },
+        "cached_tokens": 0
+      },
+      "output_tokens": 3565,
+      "output_tokens_details": {
+        "reasoning_tokens": 162
+      },
+      "total_tokens": 8260
+    },
+    "generated_at": "2026-11-26T17:00:33.535375+00:00",
+    "estimated_standard_usd": 0.002252,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_037523970822870d016b0865b257e487d086423ddac1d5be8d",
+      "usage": {
+        "input_tokens": 7916,
+        "input_tokens_details": {
+          "cache_write_tokens": 7913,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 7913
+          },
+          "cached_tokens": 0
+        },
+        "output_tokens": 701,
+        "output_tokens_details": {
+          "reasoning_tokens": 641
+        },
+        "total_tokens": 8617
+      },
+      "reviewed_at": "2026-11-26T17:00:47.193620+00:00",
+      "summary": "No essential technical corrections found. The worked arithmetic checks out, and the README accurately describes the utility’s input, ordering behavior, output, and CLI.",
+      "edits": [],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0011420999999999998
+    }
+  },
+  "validation": {
+    "article_words": 1473,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
