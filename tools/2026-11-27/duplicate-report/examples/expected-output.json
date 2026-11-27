@@ -1,0 +1,14 @@
+{
+  "duplicate_groups": [
+    {
+      "bytes_each": 5,
+      "paths": [
+        "a.txt",
+        "b.txt"
+      ],
+      "redundant_bytes": 5,
+      "sha256": "a6328afc76e9db71da297ebff4b0d3e7a7eb3b01d917c05a6573fef121b6ecb6"
+    }
+  ],
+  "potential_redundant_bytes": 5
+}

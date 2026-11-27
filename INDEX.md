@@ -35,3 +35,4 @@
 | 2026-11-24 | [Duplicate Report for Asset Pipelines](tools/2026-11-24/duplicate-report/README.md) | asset pipelines and storage engineering | <!-- publication:2026-11-24 -->
 | 2026-11-25 | [matrix-audit](tools/2026-11-25/matrix-audit/README.md) | scientific computing and engineering | <!-- publication:2026-11-25 -->
 | 2026-11-26 | [dependency-order](tools/2026-11-26/dependency-order/README.md) | build systems and workflow orchestration | <!-- publication:2026-11-26 -->
+| 2026-11-27 | [Duplicate Report for Asset Pipelines](tools/2026-11-27/duplicate-report/README.md) | asset pipelines and storage engineering | <!-- publication:2026-11-27 -->

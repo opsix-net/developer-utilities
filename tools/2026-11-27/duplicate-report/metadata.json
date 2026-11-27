@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-27",
+  "account": "opsix-net",
+  "focus": "Practical software engineering, scientific research tools, and automation across sectors",
+  "title": "A Credit Spread Is Not Just a Default Forecast",
+  "article": "articles/2026-11-27-credit-spreads-risk-premiums-data-quality.md",
+  "utility_kind": "duplicate-report",
+  "utility_title": "Duplicate Report for Asset Pipelines",
+  "utility_use_case": "A research team exports the same instrument dataset into several project folders and wants to estimate avoidable storage before archiving. Run `bash duplicate-report.sh --root ./assets`, inspect the JSON paths and byte totals, then verify provenance and retention requirements manually. The report is read-only: it does not identify the canonical copy or remove files.",
+  "domain": "asset pipelines and storage engineering",
+  "tags": [
+    "credit-risk",
+    "fixed-income",
+    "market-data",
+    "risk-management",
+    "data-engineering",
+    "storage"
+  ],
+  "source": {
+    "book_label": "Advanced Financial Risk Management_ Tools and Techniques for Integrated Credit Risk and Interest Rate Risk Management",
+    "section_title": "30.000 Years to Maturity",
+    "book_sha256": "19b789755cc58546291df89ba0aeb25f14c5b00f6dd98facd60c3f1ba888c3d2",
+    "excerpt_sha256": "2a87eb2d881f9ec3791ef702ca49fc234b33e563218e9d217659590ab8c0118d",
+    "excerpt_truncated": false
+  },
+  "generation": {
+    "model": "gpt-6-luna",
+    "response_id": "resp_087215133a4b6012016b09b714899c87d09eb577dc39f52bcb",
+    "usage": {
+      "input_tokens": 2345,
+      "input_tokens_details": {
+        "cache_write_tokens": 2342,
+        "cache_write_tokens_details": {
+          "ttl_12h_tokens": 0,
+          "ttl_30m_tokens": 2342
+        },
+        "cached_tokens": 0
+      },
+      "output_tokens": 3772,
+      "output_tokens_details": {
+        "reasoning_tokens": 122
+      },
+      "total_tokens": 6117
+    },
+    "generated_at": "2026-11-27T17:00:32.565895+00:00",
+    "estimated_standard_usd": 0.0021205,
+    "pricing_reference": "https://developers.openai.com/api/docs/pricing",
+    "pricing_date": "2026-10-02",
+    "estimate_note": "Standard uncached token estimate; cache writes, discounts, and actual billing can differ.",
+    "editorial_review": {
+      "model": "gpt-6-luna",
+      "response_id": "resp_054f958ebd9d7de8016b09b731093487d083482f3f507398ee",
+      "usage": {
+        "input_tokens": 5818,
+        "input_tokens_details": {
+          "cache_write_tokens": 5815,
+          "cache_write_tokens_details": {
+            "ttl_12h_tokens": 0,
+            "ttl_30m_tokens": 5815
+          },
+          "cached_tokens": 0
+        },
+        "output_tokens": 1365,
+        "output_tokens_details": {
+          "reasoning_tokens": 1272
+        },
+        "total_tokens": 7183
+      },
+      "reviewed_at": "2026-11-27T17:00:44.325637+00:00",
+      "summary": "Corrected the README’s broad claim about filesystem errors; the script reports file-opening errors, while some traversal or file-status errors may not be surfaced.",
+      "edits": [
+        {
+          "field": "utility_readme",
+          "old": "filesystem read problems are reported through argparse’s error handling",
+          "new": "file-opening errors are reported through argparse’s error handling"
+        }
+      ],
+      "glossary_edits": [],
+      "fix_arithmetic_checks": [],
+      "estimated_standard_usd": 0.0012643
+    }
+  },
+  "validation": {
+    "article_words": 1602,
+    "glossary_terms": 10,
+    "source_copy_check": "passed",
+    "credential_check": "passed",
+    "editorial_punctuation_check": "passed",
+    "independent_technical_review": "passed",
+    "bash_syntax": "passed",
+    "utility_example": "passed",
+    "utility_tests": "passed"
+  }
+}
